@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+$primary-color:#f6dec2;
+$secondary-color:#362516;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Lato",sans-serif;
+}
+
+img {
+    max-width:100%;
+
+}
+.logo {
+    
+    font-family:'Oxanium',sans-serif;
+}
+
+.main_heading {
+    color:$secondary-color;
+    font : {
+        weight:650;
+        family:'Lato',sans-serif;
+    }
+}
+.bg-main {
+    background-color:$primary-color;
+}
+.bg-line {
+    background-color:$secondary-color;
+}
+
+
+.main_description {
+    color:$secondary-color;
+}
+
+.main_btn {
+    background-color:$secondary-color;
+    color:$primary-color;
+}
+.nav-link {
+    font-size:9.3em;
+}
+
