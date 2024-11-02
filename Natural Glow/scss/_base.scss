@@ -34,7 +34,12 @@ img {
     background-color:$secondary-color;
 }
 
-
+.nav-link {
+    font-size:1.3em;
+}
+.main_heading {
+    color:$secondary-color;
+}
 .main_description {
     color:$secondary-color;
 }
@@ -42,8 +47,5 @@ img {
 .main_btn {
     background-color:$secondary-color;
     color:$primary-color;
-}
-.nav-link {
-    font-size:9.3em;
 }
 

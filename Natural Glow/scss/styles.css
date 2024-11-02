@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
-
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +29,14 @@ img {
   background-color: #362516;
 }
 
+.nav-link {
+  font-size: 1.3em;
+}
+
+.main_heading {
+  color: #362516;
+}
+
 .main_description {
   color: #362516;
 }
@@ -40,10 +46,31 @@ img {
   color: #f6dec2;
 }
 
-.nav-link {
-  font-size: 9.3em;
-}
-
 .landing {
   min-height: 100vh;
+}
+
+.welcome {
+  overflow: hidden;
+  border-radius: 70%;
+}
+
+.welcome_note {
+  font-size: 3.5em;
+}
+
+.main_btn {
+  background-color: #362516;
+  color: #f6dec2;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.readmorebtn {
+  background-color: #362516;
+}
+
+.descriptable_image {
+  border-radius: 0 30%;
 }/*# sourceMappingURL=styles.css.map */
