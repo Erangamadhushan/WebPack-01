@@ -29,6 +29,14 @@ img {
   background-color: #362516;
 }
 
+.border-main {
+  border: 2px solid rgba(243, 229, 212, 0.8784313725);
+}
+
+.border-line {
+  border: 2px solid #362516;
+}
+
 .nav-link {
   font-size: 1.3em;
 }

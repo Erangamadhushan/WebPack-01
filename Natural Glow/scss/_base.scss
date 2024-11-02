@@ -33,6 +33,12 @@ img {
 .bg-line {
     background-color:$secondary-color;
 }
+.border-main {
+    border:2px solid $primary-color;
+}
+.border-line {
+    border:2px solid $secondary-color;
+}
 
 .nav-link {
     font-size:1.3em;
