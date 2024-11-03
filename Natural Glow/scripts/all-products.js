@@ -145,7 +145,7 @@ export const products = [
     {
         title:"Item 020",
         img:"./images/products/item020.jpg",
-        category:"category20",
+        category:"category5",
         desc:"This is a Item020 Description for customers",
         price:9.99
     }
