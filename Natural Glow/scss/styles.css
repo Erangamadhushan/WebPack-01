@@ -60,7 +60,6 @@ img {
 
 .welcome {
   overflow: hidden;
-  border-radius: 70%;
 }
 
 .welcome_note {
@@ -81,4 +80,15 @@ img {
 
 .descriptable_image {
   border-radius: 0 30%;
+}
+
+.border-rl {
+  border-radius: 0px 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .welcome_items {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=styles.css.map */
