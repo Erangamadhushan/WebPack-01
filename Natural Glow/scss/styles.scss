@@ -16,8 +16,16 @@
 }
 
 .main_btn {
-    background-color: #362516;;
+    background-color: #362516;
     color:#f6dec2;
+    padding:5px 20px;
+    font-size:1.2em;
+    border-radius:10px;
+}
+
+.line_btn {
+    background-color:#f6dec2;
+    color:#362516;
     padding:5px 20px;
     font-size:1.2em;
     border-radius:10px;
@@ -32,6 +40,16 @@
 }
 .border-rl {
     border-radius:0px 50px 0;
+}
+
+.footer{
+    a {
+        text-decoration:none;
+        color:#ffffff;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
 }
 
 
