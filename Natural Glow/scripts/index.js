@@ -100,7 +100,7 @@ function loadFooter(){
         footerContent += `
             <div class="col-md-3 col-sm-6">
                 <div class="d-grid' style="display:grid;place-items:center;">
-                    <h1 class="text-center text-white">${item.title}</h1>
+                    <h2 class="text-center text-white">${item.title}</h2>
                     <p class="text-white">${item.topic}</p>
                     <button type="button" class="line_btn">${item.buttonValue}</button>
                 </div>

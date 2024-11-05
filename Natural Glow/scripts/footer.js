@@ -23,7 +23,7 @@ export const content2 = [
 export const content3 = [
     {
         title:'Natura Glow',
-        img:''
+        img:'./images/default/logo.png'
         
     }
 ];
