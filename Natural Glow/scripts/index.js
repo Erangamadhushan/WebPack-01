@@ -1,6 +1,7 @@
 import {products} from './products.js';
 import { testiminals } from './terminologies.js';
 import {content1,content2,content3,content4} from './footer.js';
+import {explorer} from './explorer.js';
 
 let products_container = document.querySelector('.products_container');
 let terminologie = document.querySelector('.terminologies');
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded',() => {
     renderitems(products);
     renderterminologies(testiminals);
     loadFooter();
+    explorerItem(explorer);
 });
 
 function renderitems(products) {
@@ -18,7 +20,7 @@ function renderitems(products) {
         products_content += `
             <div class="col-lg-2 col-md-3 cold-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                 <div class="d-grid" style="display:grid;place-items:center;">
-                    <img src="${item.img}" alt="services_images" style="width:120px;aspect-ratio:3/2;object-fit:cover;"/>
+                    <img src="${item.img}" alt="services_images" style="width:150px;aspect-ratio:3/2;object-fit:cover;"/>
                     <h4 class="text-center main_heading py-2">${item.title}</h4>
                     <p class="text-center main_heading">${item.desc}</p>
                     <p class="text-center main_description">$${item.price}
@@ -108,6 +110,36 @@ function loadFooter(){
         `
     });
 
-    console.log(footerContent);
+    //console.log(footerContent);
     footer.innerHTML = footerContent;
 }
+
+let ex_content_container = document.querySelector('.ex_products');
+
+function explorerItem(explorer) {
+    // console.log(explorer);
+    ex_content_container.innerHTML = "";
+    let ex_content = " ";
+    explorer.forEach((item) => {
+        ex_content += `
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2 item_direct p-0">
+                <div class="card">
+                    <img src="${item.img}" alt="${item.desc}" class="card-img-top"/>
+                    <div class="card-body">
+                        <h3 class="text-center main_heading">${item.category}</h3>
+                        <p class="text-center main_description">${item.desc}</p>
+                    </div>
+                </div>
+                <div class="card_explorer" style="display:grid;place-items:center;overflow:hidden;">
+                    <h1 class="text-white">Shopping Now</h1>
+                    <a href="products.html" class="main_btn">Buy Now</a>
+                </div>
+            </div>
+        `
+    });
+    console.log(ex_content);
+    
+    ex_content_container.innerHTML = ex_content;
+}
+
+
