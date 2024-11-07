@@ -134,6 +134,13 @@ img {
   backdrop-filter: blur(5px);
 }
 
+.service_content a {
+  text-decoration: none;
+}
+.service_content a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 767px) {
   .welcome_items {
     display: flex;

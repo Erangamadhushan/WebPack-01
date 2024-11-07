@@ -82,6 +82,15 @@
     }
 }
 
+.service_content {
+    a{
+        text-decoration:none;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+}
+
 
 
 
