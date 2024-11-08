@@ -1,8 +1,10 @@
 import {content1,content2,content3,content4} from './footer.js';
+import {subDetails1, subDetails2} from './subscription.js';
 
 let footercontent = document.querySelector('.footer');
 window.addEventListener('DOMContentLoaded',() => {
     loadFooter();
+    loadSubDetails(subDetails1, subDetails2);
 })
 
 function loadFooter(){
@@ -90,3 +92,39 @@ service_desc[0].innerHTML = services_content[0];
 service_desc[1].innerHTML = services_content[1];
 service_desc[2].innerHTML = services_content[2];
 service_desc[3].innerHTML = services_content[3];
+
+// ====================================================================================================================
+//add subcription details
+
+
+function loadSubDetails(Details1, Details2) {
+    let subDetail = document.querySelector('.subscription_details');
+    subDetail.innerHTML = " ";
+    let content = " ";
+    content += `
+        <div class="col-lg-5 col-md-6">
+            <img src="${Details1.img}" alt="subcriptionImage" style="max-width:100%;"/>
+        </div>
+    `;
+    content +=`
+        <div class="col-lg-5 col-md-6 p-5">
+            <h2 class="text-center main_heading">${Details2.title}</h2>
+            <form action="./backend/subcription.php" method="post">
+                <div class="my-3">
+                    <label for="name" class="form-label">${Details2.name}</label>
+                    <input type="text" class="form-control" id="name" name="name"/>
+                </div>
+                <div class="my-3">
+                    <label for="name" class="form-label">${Details2.email}</label>
+                    <input type="text" class="form-control" id="name" name="name"/>
+                </div>
+                <div class="my-3">
+                    <input type="submit" class="btn btn-danger" value="Subscribe" name="submit"/>
+                </div>
+            </form>
+        </div>
+    `;
+
+    subDetail.innerHTML += content;
+}
+
