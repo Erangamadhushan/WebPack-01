@@ -101,10 +101,10 @@ function loadFooter(){
     content4.forEach((item) => {
         footerContent += `
             <div class="col-md-3 col-sm-6">
-                <div class="d-grid' style="display:grid;place-items:center;">
+                <div  style="display:grid;place-items:center;">
                     <h2 class="text-center text-white">${item.title}</h2>
-                    <p class="text-white">${item.topic}</p>
-                    <button type="button" class="line_btn">${item.buttonValue}</button>
+                    <p class="text-white text-center">${item.topic}</p>
+                    <a href="subcription.html"  class="btn btn-danger">${item.buttonValue}</a>
                 </div>
             </div>
         `
@@ -141,5 +141,11 @@ function explorerItem(explorer) {
     
     ex_content_container.innerHTML = ex_content;
 }
+
+
+//subscription information loads
+
+let subscription = document.querySelector('.subscription_details');
+subscription.innerHTML = " ";
 
 
