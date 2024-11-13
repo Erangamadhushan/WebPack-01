@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+$main-color:#f5c31f;
+.btn-main {
+    background-color:$main-color;
+    padding:10px;
+    border:none;
+    border-radius:0.8em;
+}

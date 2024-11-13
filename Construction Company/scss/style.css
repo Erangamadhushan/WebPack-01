@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-main {
+  background-color: #f5c31f;
+  padding: 10px;
+  border: none;
+  border-radius: 0.8em;
+}/*# sourceMappingURL=style.css.map */
