@@ -84,14 +84,14 @@ function loadItems(items){
             case "category1":
                 content += `
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card">
+                        <div class="card" >
                             <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body">
+                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
                                 <h1>${item.title}</h1>
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart(item);" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -104,12 +104,12 @@ function loadItems(items){
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body">
+                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
                                 <h1>${item.title}</h1>
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -122,12 +122,12 @@ function loadItems(items){
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body">
+                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
                                 <h1>${item.title}</h1>
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -140,12 +140,12 @@ function loadItems(items){
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body">
+                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
                                 <h1>${item.title}</h1>
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -158,12 +158,12 @@ function loadItems(items){
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body">
+                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
                                 <h1>${item.title}</h1>
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@ function loadFooter(){
         `
     });
 
-    console.log(footerContent);
+    //console.log(footerContent);
     footer.innerHTML = footerContent;
 }
 
