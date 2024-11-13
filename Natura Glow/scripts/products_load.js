@@ -83,7 +83,7 @@ function loadItems(items){
         switch(item.category) {
             case "category1":
                 content += `
-                    <div class="col-lg-2 col-md-4 cold-sm-6 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
                             <div class="card-body">
@@ -91,7 +91,7 @@ function loadItems(items){
                                 <p>${item.category}</p>
                                 <p>${item.desc}</p>
                                 <span class="main_description">$${item.price} </span>
-                                <button type="button" class="main_btn">Buy Now</button>
+                                <button type="button" onclick="addtoCart(item);" class="main_btn">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ function loadItems(items){
             break;
             case "category2":
                 content += `
-                    <div class="col-lg-2 col-md-4 cold-sm-6 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
                             <div class="card-body">
@@ -119,7 +119,7 @@ function loadItems(items){
             break;
             case "category3":
                 content += `
-                    <div class="col-lg-2 col-md-4 cold-sm-6 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
                             <div class="card-body">
@@ -137,7 +137,7 @@ function loadItems(items){
             break;
             case "category4":
                 content += `
-                    <div class="col-lg-2 col-md-4 cold-sm-6 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
                             <div class="card-body">
@@ -155,7 +155,7 @@ function loadItems(items){
             break;
             case "category5":
                 content += `
-                    <div class="col-lg-2 col-md-4 cold-sm-6 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                         <div class="card">
                             <img src="${item.img}" class="card-img-top"/>
                             <div class="card-body">
@@ -232,6 +232,5 @@ function loadFooter(){
     console.log(footerContent);
     footer.innerHTML = footerContent;
 }
-
 
 

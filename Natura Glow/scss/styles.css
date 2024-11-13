@@ -9,7 +9,6 @@
 
 body {
   min-height: 100vh;
-  max-width:100%;
 }
 
 img {
@@ -102,6 +101,10 @@ img {
 .navbar-toggler {
   background-color: #362516;
   color: rgba(243, 229, 212, 0.8784313725);
+}
+
+.border-main {
+  border: 1px solid #362516;
 }
 
 .footer a {

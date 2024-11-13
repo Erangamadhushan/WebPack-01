@@ -20,7 +20,7 @@ function renderitems(products) {
         products_content += `
             <div class="col-lg-2 col-md-3 cold-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
                 <div class="d-grid" style="display:grid;place-items:center;">
-                    <img src="${item.img}" alt="services_images" style="width:150px;aspect-ratio:3/2;object-fit:cover;"/>
+                    <img src="${item.img}" alt="services_images" style="width:80%;aspect-ratio:3/2;object-fit:cover;"/>
                     <h4 class="text-center main_heading py-2">${item.title}</h4>
                     <p class="text-center main_heading">${item.desc}</p>
                     <p class="text-center main_description">$${item.price}
@@ -132,7 +132,7 @@ function explorerItem(explorer) {
                 </div>
                 <div class="card_explorer" style="display:grid;place-items:center;overflow:hidden;">
                     <h1 class="text-white">Shopping Now</h1>
-                    <a href="products.html" class="main_btn">Buy Now</a>
+                    <a href="products.html" class="main_btn">Explorer More..</a>
                 </div>
             </div>
         `
