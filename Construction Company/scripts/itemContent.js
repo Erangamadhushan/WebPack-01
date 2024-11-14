@@ -39,7 +39,7 @@ export const items = [
 
 export const line_img = [
     {
-        img:"./images/default/products.jpg",
+        img:"./images/default/building.jpg",
         alt:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     }
 ];

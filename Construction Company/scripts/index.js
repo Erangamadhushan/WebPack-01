@@ -20,8 +20,8 @@ function renderItems(Apartments) {
     })
     categories.forEach((ele) => {
         content += `
-            <div class="col-md-2 col-sm-5">
-                <button type="button" class="btn btn-secondary">${ele}</button>
+            <div class="col-md-2 col-sm-5 " style="display:grid;place-items:center;">
+                <button type="button" class="btn btn-secondary btn-lg">${ele}</button>
             </div>  
         `
     });
@@ -40,7 +40,7 @@ function renderlineContent(img,text) {
     img.forEach((item) => {
         img_sec += `
         <div>
-            <img src="${item.img}" alt="${item.alt}" style="width:80%"/>
+            <img src="${item.img}" alt="${item.alt}" style="width:100%"/>
         </div>
     `;
     console.log(item);
@@ -64,14 +64,14 @@ function renderlineContent(img,text) {
         console.log(plotsContainer);
         plotsContainer.forEach((plots) => {
            console.log(plots);
-           text_sec += `<div class="row row-cols-2">`;
+           text_sec += `<div class="row">`;
            plots.subPlot.forEach((plot) => {
                 console.log(plot.img);
                 text_sec += `
-                    <div>
+                    <div class="col-md-5">
                         <div class="row row-cols-2">
                             <div class="col-4">
-                                <img src="${plot.img}" alt="${plot.desc}" style="width:60px;"/>
+                                <img src="${plot.img}" alt="${plot.desc}" style="width:50px;"/>
                             </div>
                             <div class="col-8">
                                 <p>${plot.desc}</p>
