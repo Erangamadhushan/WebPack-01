@@ -10,6 +10,29 @@
     color:#ffffff;
     font-size:1.2em;
 }
+.bg-line {
+    background-color:#edebeb;
+}
+.reviews {
+    border:1px solid $main-color;
+}
+
+.carousel-item {
+    max-width: 100%;
+    img {
+        
+        background-size:cover;
+    }
+}
+
+.reviewImg {
+    
+    img {
+        aspect-ratio:1;
+        background-size:cover;
+        border-radius: 50%;
+    }
+}
 
 .welcome_container {
     max-width:100%;
@@ -39,4 +62,18 @@
 .subimage {
     background:url('../images/default/architecture.jpg');
     background-size:cover;
+}
+
+.progress-thumb {
+    width:100%;
+    position:relative;
+    border:1px solid $main-color;
+    padding:4px;
+    border-radius:.5em;
+}
+.progress-track {
+    position: relative;
+    padding:5px;
+    border-radius: .5em;
+    background:$main-color;
 }

@@ -11,6 +11,19 @@ $main-color:#f5c31f;
     border:none;
     border-radius:0.8em;
 }
+.btn-outline-main {
+    padding-block:.8em;
+    padding-inline:1em;
+    background:transparent;
+    border:1px solid $main-color;
+    color:$main-color;
+    font-size:1.2em;
+    border-radius:.8em;
+    &:hover {
+        background:$main-color;
+        color:#fff;
+    }
+}
 
 .bg-main {
     background-color:$main-color;

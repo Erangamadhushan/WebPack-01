@@ -37,12 +37,17 @@ export const items = [
     }
 ];
 
+//start line_img content here 
+
 export const line_img = [
     {
         img:"./images/default/building.jpg",
         alt:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     }
 ];
+
+//start line_text content here 
+
 export const line_text = [
     {
         title:"About Us",
@@ -67,5 +72,74 @@ export const line_text = [
             }
         ],
         buttonText:"Read More .."
+    }
+];
+
+// start cardProperty content here 
+
+export const cardProperty = [
+    {
+        img:"./images/default/architect.jpg",
+        topic:"Customer Reviews",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        rating:80
+    },
+    {
+        img:"./images/default/architecture.jpg",
+        topic:"Customer Terminologies",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        rating:90
+    },
+    {
+        img:"./images/default/building.jpg",
+        topic:"Service Spread sheet",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        rating:80
+    }
+];
+
+export const customerReviews = [
+    {
+        img:"./images/default/building.jpg",
+        topic:"Eranga Madhushan",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/building.jpg",
+        topic:"Isuru Sampath",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/building.jpg",
+        topic:"Thilina Lakshan",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    }
+];
+
+export const experts = [
+    {
+        img:"./images/default/engineers/architecture.jpg",
+        title:"Engineering Type 1",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/engineers/architecture.jpg",
+        title:"Engineering Type 2",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/engineers/architecture.jpg",
+        title:"Engineering Type 3",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/engineers/architecture.jpg",
+        title:"Engineering Type 4",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        img:"./images/default/engineers/architecture.jpg",
+        title:"Engineering Type 5",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     }
 ]

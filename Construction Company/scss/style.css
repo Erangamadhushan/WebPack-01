@@ -11,6 +11,20 @@
   border-radius: 0.8em;
 }
 
+.btn-outline-main {
+  padding-block: 0.8em;
+  padding-inline: 1em;
+  background: transparent;
+  border: 1px solid #f5c31f;
+  color: #f5c31f;
+  font-size: 1.2em;
+  border-radius: 0.8em;
+}
+.btn-outline-main:hover {
+  background: #f5c31f;
+  color: #fff;
+}
+
 .bg-main {
   background-color: #f5c31f;
 }
@@ -33,6 +47,27 @@
 .nav-link {
   color: #ffffff;
   font-size: 1.2em;
+}
+
+.bg-line {
+  background-color: #edebeb;
+}
+
+.reviews {
+  border: 1px solid #f5c31f;
+}
+
+.carousel-item {
+  max-width: 100%;
+}
+.carousel-item img {
+  background-size: cover;
+}
+
+.reviewImg img {
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .welcome_container {
@@ -60,4 +95,19 @@
 .subimage {
   background: url("../images/default/architecture.jpg");
   background-size: cover;
+}
+
+.progress-thumb {
+  width: 100%;
+  position: relative;
+  border: 1px solid #f5c31f;
+  padding: 4px;
+  border-radius: 0.5em;
+}
+
+.progress-track {
+  position: relative;
+  padding: 5px;
+  border-radius: 0.5em;
+  background: #f5c31f;
 }/*# sourceMappingURL=style.css.map */
