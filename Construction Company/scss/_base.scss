@@ -11,3 +11,15 @@ $main-color:#f5c31f;
     border:none;
     border-radius:0.8em;
 }
+
+.bg-main {
+    background-color:$main-color;
+}
+
+.main-heading {
+    color:$main-color;
+}
+
+.main-description {
+    color:$main-color;
+}

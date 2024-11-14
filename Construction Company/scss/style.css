@@ -9,4 +9,41 @@
   padding: 10px;
   border: none;
   border-radius: 0.8em;
+}
+
+.bg-main {
+  background-color: #f5c31f;
+}
+
+.main-heading {
+  color: #f5c31f;
+}
+
+.main-description {
+  color: #f5c31f;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.welcome_container {
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 90vh;
+  background: rgba(255, 255, 255, 0.6666666667) url("../images/default/products.jpg");
+  background-size: cover;
+}
+
+.welcome_conten h1 {
+  font-size: 5em;
+  font-weight: 650;
+}
+
+.getCategory {
+  background: rgba(128, 128, 128, 0.8078431373);
+  border-radius: 0.8em;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }/*# sourceMappingURL=style.css.map */

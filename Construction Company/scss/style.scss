@@ -1,2 +1,30 @@
 @import './base';
 
+.nav-link {
+    color:#ffffff;
+    font-size:1.2em;
+}
+
+.welcome_container {
+    max-width:100%;
+    overflow:hidden;
+    min-height:90vh;
+    background:#ffffffaa url('../images/default/products.jpg');
+    background-size:cover;
+}
+.welcome_conten {
+    h1 {
+        font: {
+            size:5em;
+            weight:650;
+        }
+        
+    }
+}
+
+.getCategory {
+    background:#808080ce;
+    border-radius:.8em;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
