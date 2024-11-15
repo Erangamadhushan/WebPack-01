@@ -9,6 +9,21 @@
   padding: 10px;
   border: none;
   border-radius: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-btn {
+  color: #ffffff;
+  background: #222;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footerlink:hover {
+  text-decoration: underline;
 }
 
 .btn-outline-main {
@@ -86,6 +101,27 @@
   font-weight: 650;
 }
 
+#searchThings {
+  padding: 7px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(30px);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-30px);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .getCategory {
   border-radius: 0.8em;
   -webkit-backdrop-filter: blur(5px);

@@ -10,6 +10,21 @@ $main-color:#f5c31f;
     padding:10px;
     border:none;
     border-radius:0.8em;
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.footer-btn {
+    color:#ffffff;
+    background:#222;
+}
+
+.footerlink {
+    text-decoration:none;
+    color:#ffffff;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .btn-outline-main {
     padding-block:.8em;

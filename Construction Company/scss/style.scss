@@ -52,6 +52,28 @@
     }
 }
 
+#searchThings {
+    padding:7px;
+}
+
+@keyframes animate {
+    0% {
+        transform:rotate(0);
+    }
+    25% {
+        transform:rotate(30px);
+    }
+    50% {
+        transform:rotate(0);
+    }
+    75% {
+        transform:rotate(-30px);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .getCategory {
     
     border-radius:.8em;

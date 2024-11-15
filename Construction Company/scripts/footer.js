@@ -4,12 +4,16 @@ export const  footer1Content1 = {
 }
 
 export const  footer1Content2 = {
-    img:"./images/default/building.jpg",
+    img:"./images/default/building1.jpg",
     topic:"Lorem Ipsum dolor",
     desc:" Dolores hic eius distinctio totam culpa! Officiis expedita, debitis veniam obcaecati saepe perspiciatis deserunt nemo soluta nisi eum dolor in omnis excepturi."
 }
 
-export const  footer1Content3 = {
+export const footer1Content3 = {
+    img:"./icons/default/search.png"
+}
+
+export const  footer2Content1 = {
     topic:"Get Info",
     img1:"./icons/socialMedia/facebook.png",
     img2:"./icons/socialMedia/instagram.png",
@@ -18,21 +22,17 @@ export const  footer1Content3 = {
     appleStoreImg:"./icons/appleStore.png"
 }
 
-export const  footer2Content1 = {
+export const  footer2Content2 = {
     topic:"About Us",
     items1:"Customer Reviews",
     items2:"Complains",
     items3:"Special Offers"
 }
 
-export const  footer2Content2 = {
+export const  footer2Content3 = {
     topic:"Services",
     items1:"House Building Supports",
     items2:"Appartment Building"
-}
-
-export const  footer2Content3 = {
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
 }
 
 export const  footer2Content4 = {
