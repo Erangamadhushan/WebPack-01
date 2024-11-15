@@ -142,4 +142,43 @@ export const experts = [
         title:"Engineering Type 5",
         desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit."
     }
+];
+
+export const industryDistribution1 = [
+    {
+        img :"./images/default/building.jpg",
+        topic:"Geverment Industry",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores hic eius distinctio totam culpa! Officiis expedita, debitis veniam obcaecati saepe perspiciatis deserunt nemo soluta nisi eum dolor in omnis excepturi.",
+        rate:90,
+        color:"green",
+        more:{
+            direction:"explorer.html",
+            buttonProperty:"Explorer",
+        }
+    }
+];
+export const industryDistribution2 = [
+    {
+        img :"./images/default/building.jpg",
+        topic:"Local Private Industry",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores hic eius distinctio totam culpa! Officiis expedita, debitis veniam obcaecati saepe perspiciatis deserunt nemo soluta nisi eum dolor in omnis excepturi.",
+        rate:95,
+        color:"yellowgreen",
+        more:{
+            direction:"explorer.html",
+            buttonProperty:"Explorer",
+        }
+    },
+    {
+        img :"./images/default/building.jpg",
+        topic:"Foreign Industry",
+        desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores hic eius distinctio totam culpa! Officiis expedita, debitis veniam obcaecati saepe perspiciatis deserunt nemo soluta nisi eum dolor in omnis excepturi.",
+        rate:55,
+        more:"Explorer",
+        color:"red",
+        more:{
+            direction:"explorer.html",
+            buttonProperty:"Explorer",
+        }
+    }
 ]
