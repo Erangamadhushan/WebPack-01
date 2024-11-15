@@ -1,4 +1,5 @@
 import {items, line_img, line_text, cardProperty, customerReviews, experts, industryDistribution1, industryDistribution2} from './itemContent.js'
+import {footer1Content1, footer2Content3, footer1Content3, footer1Content2, footer2Content1, footer2Content2, footer2Content4 } from './footer.js';
 
 window.addEventListener("DOMContentLoaded", () => {
     renderItems(items);
@@ -255,3 +256,7 @@ function renderIndustryDistribution(industryDistributionDetails1, industryDistri
 
     industryDistributionContainer.innerHTML = industryDistributionContent;
 }
+
+// load the footer content 
+
+

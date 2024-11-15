@@ -181,4 +181,6 @@ export const industryDistribution2 = [
             buttonProperty:"Explorer",
         }
     }
-]
+];
+
+
