@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .btn-main {
   background-color: #f5c31f;
   padding: 10px;
@@ -99,6 +103,21 @@
 .welcome_conten h1 {
   font-size: 5em;
   font-weight: 650;
+}
+
+.gotoTop {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: none;
+  z-index: 9999;
+}
+.gotoTop a {
+  padding-block: 20px;
+}
+.gotoTop a img {
+  width: 50px;
+  position: relative;
 }
 
 #searchThings {

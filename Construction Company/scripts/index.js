@@ -12,6 +12,15 @@ window.addEventListener("DOMContentLoaded", () => {
     renderSponserShips(sponserships);
 });
 
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 1200) {
+        document.querySelector(".gotoTop").style.display = "block";
+    }
+    else {
+        document.querySelector(".gotoTop").style.display = "none"
+    }
+})
+
 //Catch ContentContainers
 
 let showCategories = document.querySelector('.getCategory');

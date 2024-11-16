@@ -51,6 +51,20 @@
         
     }
 }
+.gotoTop {
+    position:fixed;
+    right:20px;
+    bottom:30px;
+    display:none;
+    z-index:9999;
+    a {
+        padding-block:20px;
+        img {
+            width:50px;
+            position:relative;
+        }
+    }
+}
 
 #searchThings {
     padding:7px;
