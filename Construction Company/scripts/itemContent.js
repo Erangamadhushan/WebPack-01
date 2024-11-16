@@ -86,7 +86,7 @@ export const cardProperty = [
     },
     {
         img:"./images/default/architecture.jpg",
-        topic:"Customer Terminologies",
+        topic:"Industry Situations",
         desc:"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         rating:90
     },

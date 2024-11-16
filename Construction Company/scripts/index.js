@@ -44,7 +44,7 @@ function renderItems(Apartments) {
     })
     categories.forEach((ele) => {
         content += `
-            <div class="col-md-2 col-sm-5 " style="display:grid;place-items:center;" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+            <div class="col-md-2 col-sm-5 mt-3" style="display:grid;place-items:center;" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
                 <button type="button" class="btn btn-outline-dark btn-lg">${ele}</button>
             </div>  
         `
@@ -126,7 +126,7 @@ items.forEach((apartment) => {
 Categories.forEach((ele) => {
     console.log(ele);
     categorycontent += `
-        <div class="col-md-2 col-sm-5 " style="display:grid;place-items:center;" data-aos="fade-right" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-md-2 col-sm-5 mt-3" style="display:grid;place-items:center;" data-aos="fade-right" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
             <button type="button" class="btn-outline-main">  ${ele}</button>
         </div>  
     `
@@ -344,7 +344,7 @@ function renderFooterDetails(Content1,Content2, Content3, Content4, Content5, Co
     footerLayerContainer5Content += `
         <div>
             <h5>${Content5.topic}</h5>
-            <p><a href="#" class="footerlink">${Content5.items1}</a></p>
+            <p><a href="aboutUs.html#cusreveiws" class="footerlink">${Content5.items1}</a></p>
             <p><a href="#" class="footerlink">${Content5.items2}</a></p>
             <p><a href="#" class="footerlink">${Content5.items3}</a></p>
         </div>

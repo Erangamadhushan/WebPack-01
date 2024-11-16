@@ -1,7 +1,9 @@
-import {items, line_img, line_text, cardProperty, customerReviews, experts, industryDistribution1, industryDistribution2, sponserships} from './itemContent.js';
+import {items, line_img, line_text, cardProperty, experts, industryDistribution1, industryDistribution2, sponserships} from './itemContent.js';
+import {customerReviews} from "./customerReview.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     renderlineContent(line_img,line_text);
+    renderCustomerReviews(customerReviews);
 })
 // Render the line content here 
 
@@ -66,3 +68,38 @@ function renderlineContent(img,text) {
     line_images.innerHTML = img_sec;
     line_context.innerHTML = text_sec;
 }
+
+//load customerReviews content here
+function renderCustomerReviews(reviews){
+    let customerReviewContainer = document.querySelector('.customerReviews');
+    customerReviewContainer.innerHTML = " ";
+    let customerReviewContent = " ";
+    reviews.forEach((review) => {
+        customerReviewContent += `
+            <div class="col-lg-5 col-md-5  py-3 reviews" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+                <div class="row">
+                    <div class="col-4 reviewImg">
+                        <div class="d-flex justify-content-center">
+                            <img src="${review.img}" alt="${review.desc}" style="width:120px;"/>
+                        </div>
+                        <div>
+                            <h4 class="text-center">${review.topic}</h4>
+                            <p>Status : <b>${review.status}</b></p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <p>${review.desc}</p>
+                        <div class="progress-thumb">
+                            <div class="progress-track" style="width:${review.rate}%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    });
+
+    customerReviewContainer.innerHTML = customerReviewContent;
+}
+
