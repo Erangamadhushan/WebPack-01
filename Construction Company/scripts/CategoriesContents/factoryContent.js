@@ -1,6 +1,7 @@
 export const factoryContents = [
     {
         topic:"Process-Oriented Layout (Job Shop Layout)",
+        category:"factory",
         status:[
             "Designed for producing small batches or custom products.",
             "Machines and workstations are grouped based on similar functions (e.g., cutting, assembling).",
@@ -13,6 +14,7 @@ export const factoryContents = [
     
     {
         topic:"Product-Oriented Layout (Assembly Line Layout)",
+        category:"factory",
         status:[
             "Layout is organized in a sequence that matches the production process.",
             "Best suited for mass production of standardized products (e.g., cars, electronics).",
@@ -25,6 +27,7 @@ export const factoryContents = [
 
     {
         topic:"Fixed-Position Layout",
+        category:"factory",
         status:[
             "Used when the product is too large or heavy to move (e.g., ships, airplanes, construction projects).",
             "Workers and equipment move around the fixed product.",
@@ -37,6 +40,7 @@ export const factoryContents = [
 
     {
         topic:"Cellular Manufacturing Layout",
+        category:"factory",
         status:[
             "Combines aspects of product- and process-oriented layouts.",
             "Machines and workstations are grouped into cells that handle a product or family of products.",
@@ -49,6 +53,7 @@ export const factoryContents = [
 
     {
         topic:" Warehouse/Storage Layout",
+        category:"factory",
         status:[
             "Designed to maximize storage and facilitate efficient material handling.",
             "Common for logistics centers or distribution hubs.",
@@ -61,6 +66,7 @@ export const factoryContents = [
 
     {
         topic:"Continuous Flow Layout",
+        category:"factory",
         status:[
             "Ideal for industries with a constant demand for products (e.g., chemicals, paper, food).",
             "Production process flows continuously, often automated.",
@@ -73,6 +79,7 @@ export const factoryContents = [
 
     {
         topic:"Modular Layout",
+        category:"factory",
         status:[
             "Combines flexibility of job shops with efficiency of assembly lines.",
             "Workstations are organized into modules that can be reconfigured.",
@@ -85,6 +92,7 @@ export const factoryContents = [
 
     {
         topic:"Open Layout",
+        category:"factory",
         status:[
             "Large, open spaces with flexible workstations",
             "Often used in technology or garment manufacturing for flexibility.",

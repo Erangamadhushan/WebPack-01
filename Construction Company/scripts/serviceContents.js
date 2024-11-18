@@ -12,23 +12,35 @@ function renderCategoryDetails(categories) {
     let outputCategoryContents = document.querySelector('.categoryContents');
     let categoryContentItem = " "; 
     categories.forEach((category) => {
-        categoryContentItem += `<h1>${category.topic}</h1>`;
-        category.forEach((categoryItems) => {
+        console.log(category);
+        category.forEach((item) => {
             categoryContentItem += `
-                <div class="col-md-8">
-                    <div class="row row-cols-2">
-                        <div class="col-4">
-
+                <div class="col-md-10 my-4 border border-4 p-2 py-5">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2>${item.topic}<h2>
+                            <h5>Advantages</h5>
+                            <p>${item.advantages}</p>
+                            <h5>Disadvantages</h5>
+                            <p>${item.disadvantages}</p>
                         </div>
-                        <div class="col-8">
-
+                        <div class="col-sm-7">
+                            <h5>Status :</h5>
+                            <ul>
+                                <li>${item.status[0]}</li>
+                                <li>${item.status[1]}</li>
+                                <li>${item.status[2]}</li>
+                            </ul>
+                            <p>${item.desc}</p>
+                            <button type="button" class="btn btn-outline-success" onclick="setItems('${item.topic}','${item.desc}')">Explorer Chat</button>
                         </div>
                     </div>
                 </div>
-            `
+            `;
         })
     });
-    outputCategoryContents.innerHTML = categoryContentItem;
+    console.log(categoryContentItem);
+   outputCategoryContents.innerHTML = categoryContentItem;
 }
 
 //load categoryMenu content
@@ -54,3 +66,5 @@ Categories.forEach((ele) => {
 
 });
 CategoryMenu.innerHTML = categorycontent;
+
+

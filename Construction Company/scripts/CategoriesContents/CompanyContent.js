@@ -1,6 +1,7 @@
 export const companyContents = [
     {
         topic:"Office Building",
+        category:"company",
         status:[
             "Layout: Includes private offices, open workspaces, conference rooms, and break areas.",
             "Ideal for: Corporate offices, professional services, and startups.",
@@ -13,6 +14,7 @@ export const companyContents = [
 
     {
         topic:"Corporate Headquarters",
+        category:"company",
         status:[
             "Layout: Large-scale building with executive offices, meeting rooms, lounges, and facilities for board members.",
             "Ideal for: Large corporations.",
@@ -25,6 +27,7 @@ export const companyContents = [
 
     {
         topic:"Technology Hub",
+        category:"company",
         status:[
             "Layout: Features open spaces for collaboration, innovation labs, server rooms, and high-tech infrastructure.",
             "Ideal for: Tech companies, startups, or R&D centers.",
@@ -37,6 +40,7 @@ export const companyContents = [
 
     {
         topic:"Manufacturing Plant",
+        category:"company",
         status:[
             "Layout: Includes production areas, storage, shipping docks, and administrative offices.",
             "Ideal for: Factories or production facilities",
@@ -49,6 +53,7 @@ export const companyContents = [
 
     {
         topic:"Warehouse and Office",
+        category:"company",
         status:[
             "Layout: Combines warehouse storage with attached office spaces.",
             "Ideal for: Logistics, e-commerce, and wholesale businesses.",
@@ -61,6 +66,7 @@ export const companyContents = [
 
     {
         topic:"Mixed-Use Building",
+        category:"company",
         status:[
             "Layout: Combines office spaces with retail outlets, apartments, or entertainment facilities.",
             "Ideal for: Urban businesses or real estate developers.",
@@ -73,6 +79,7 @@ export const companyContents = [
 
     {
         topic:"Co-Working Space",
+        category:"company",
         status:[
             "Layout: Open-plan work areas, private offices, shared meeting rooms, and amenities like kitchens and lounges.",
             "Ideal for: Freelancers, small businesses, and remote teams.",
@@ -85,6 +92,7 @@ export const companyContents = [
 
     {
         topic:"Call Center Building",
+        category:"company",
         status:[
             "Layout: Features rows of cubicles or desks with centralized supervision, along with breakout areas.",
             "Ideal for: Customer service and telemarketing firms.",
@@ -97,6 +105,7 @@ export const companyContents = [
 
     {
         topic:"Green/Sustainable Building",
+        category:"company",
         status:[
             "Layout: Incorporates eco-friendly features like solar panels, energy-efficient HVAC systems, and natural lighting.",
             "Ideal for: Companies prioritizing environmental responsibility.",
@@ -109,6 +118,7 @@ export const companyContents = [
 
     {
         topic:"Training and Development Center",
+        category:"company",
         status:[
             "Layout: Classrooms, conference rooms, auditoriums, and breakout spaces.",
             "Ideal for: Educational companies or internal staff training.",
