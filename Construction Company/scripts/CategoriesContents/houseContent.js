@@ -1,7 +1,9 @@
 export const housesContents = [
     {
         topic:"Ranch-Style",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Single-story layout",
             "Open floor plan with a long, low profile.",
@@ -13,7 +15,9 @@ export const housesContents = [
     },
     {
         topic:"Bungalow",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Compact and cozy, often with 1-1.5 stories.",
             "Front porch and steep roof.",
@@ -25,7 +29,9 @@ export const housesContents = [
     },
     {
         topic:"Contemporary",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Modern and minimalist design.",
             "Open spaces, clean lines, and large windows.",
@@ -37,7 +43,9 @@ export const housesContents = [
     },
     {
         topic:" Colonial",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Symmetrical, rectangular design with a central entryway.",
             "Two to three stories, with bedrooms on the upper floors.",
@@ -49,7 +57,9 @@ export const housesContents = [
     },
     {
         topic:"Craftsman",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Low-pitched roofs with wide eaves and exposed rafters.",
             "Built-in cabinetry and natural materials like wood and stone.",
@@ -61,7 +71,9 @@ export const housesContents = [
     },
     {
         topic:"Victorian",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Ornate detailing and decorative trim.",
             "Steep gabled roofs, towers, and bay windows.",
@@ -73,7 +85,9 @@ export const housesContents = [
     },
     {
         topic:"Mediterranean",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Stucco exteriors with red tile roofs.",
             "Arched windows and doorways.",
@@ -85,7 +99,9 @@ export const housesContents = [
     },
     {
         topic:"Tiny Home",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Small and functional, typically under 500 square feet.",
             "Optimized for minimalism and portability.",
@@ -97,7 +113,9 @@ export const housesContents = [
     },
     {
         topic:"Farmhouse",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Rustic and spacious with a large kitchen and gathering spaces.",
             "Wrap-around porch and gabled rooflines.",
@@ -109,7 +127,9 @@ export const housesContents = [
     },
     {
         topic:"Townhouse",
+        img:"./images/default/architecture.jpg",
         category:"house",
+        price:"100000",
         status:[
             "Narrow, multi-story homes often connected to neighboring units.",
             "Efficient design for urban living.",

@@ -14,6 +14,7 @@ function renderCategoryDetails(categories) {
     categories.forEach((category) => {
         console.log(category);
         category.forEach((item) => {
+            console.log(item.img);
             categoryContentItem += `
                 <div class="col-md-10 my-4 border border-4 p-2 py-5">
                     <div class="row">
@@ -32,7 +33,7 @@ function renderCategoryDetails(categories) {
                                 <li>${item.status[2]}</li>
                             </ul>
                             <p>${item.desc}</p>
-                            <button type="button" class="btn btn-outline-success" onclick="setItems('${item.topic}','${item.desc}')">Explorer Chat</button>
+                            <button type="button" class="btn btn-outline-success" onclick="setItems('${item.topic}','${item.desc}','${item.price}','${item.img}')">Explorer Chat</button>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,9 @@
 export const apartmentContents = [
     {
         topic:"Studio Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Open-concept space combining living, sleeping, and kitchen areas, with a separate bathroom.",
             "Ideal for: Singles or minimalists.",
@@ -14,7 +16,9 @@ export const apartmentContents = [
 
     {
         topic:"One-Bedroom Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Separate bedroom, living room, kitchen, and bathroom.",
             "Ideal for: Singles or couples seeking privacy.",
@@ -27,7 +31,9 @@ export const apartmentContents = [
 
     {
         topic:"Two-Bedroom Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Two separate bedrooms with shared living, dining, kitchen, and bathroom areas.",
             "Ideal for: Small families, roommates, or guests.",
@@ -40,7 +46,9 @@ export const apartmentContents = [
 
     {
         topic:"Three-Bedroom Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Three bedrooms, multiple bathrooms, and larger common areas.",
             "Ideal for: Families or groups of roommates.",
@@ -53,7 +61,9 @@ export const apartmentContents = [
 
     {
         topic:" Loft Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Open space, often with high ceilings, large windows, and minimal interior walls. May have a mezzanine or sleeping loft.",
             "Ideal for: Creative professionals or urban dwellers.",
@@ -66,7 +76,9 @@ export const apartmentContents = [
 
     {
         topic:"Duplex or Triplex Apartment",
+        img:"./images/default/architecture3.jpg",
         category:"appartment",
+        price:"100000",
         status:[
             "Layout: Two or three levels connected by an internal staircase.",
             "Ideal for: Families or those seeking more separation of spaces.",
