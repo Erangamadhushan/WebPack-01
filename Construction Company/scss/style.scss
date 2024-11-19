@@ -117,3 +117,19 @@ textarea {
     border-radius: .5em;
     background:$main-color;
 }
+
+.xyz {
+    ul {
+        list-style-type:none;
+        li {
+            a {
+                text-decoration:none;
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+    }
+}

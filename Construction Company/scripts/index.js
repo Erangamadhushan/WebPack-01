@@ -345,7 +345,7 @@ function renderFooterDetails(Content1,Content2, Content3, Content4, Content5, Co
         <div>
             <h5>${Content5.topic}</h5>
             <p><a href="aboutUs.html#cusreveiws" class="footerlink">${Content5.items1}</a></p>
-            <p><a href="#" class="footerlink">${Content5.items2}</a></p>
+            <p><a href="faq.html#complains" class="footerlink">${Content5.items2}</a></p>
             <p><a href="#" class="footerlink">${Content5.items3}</a></p>
         </div>
     `;
