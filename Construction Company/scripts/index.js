@@ -45,7 +45,7 @@ function renderItems(Apartments) {
     categories.forEach((ele) => {
         content += `
             <div class="col-md-2 col-sm-5 mt-3" style="display:grid;place-items:center;" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
-                <button type="button" class="btn btn-outline-dark btn-lg">${ele}</button>
+                <button type="button" class="btn btn-outline-dark btn-lg" onclick="directPath();">${ele}</button>
             </div>  
         `
     });
@@ -127,7 +127,7 @@ Categories.forEach((ele) => {
     console.log(ele);
     categorycontent += `
         <div class="col-md-2 col-sm-5 mt-3" style="display:grid;place-items:center;" data-aos="fade-right" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
-            <button type="button" class="btn-outline-main">  ${ele}</button>
+            <button type="button" class="btn-outline-main" onclick="directPath();">  ${ele}</button>
         </div>  
     `
 });
@@ -391,3 +391,4 @@ function renderSponserShips(sponsers) {
 
     sponsersContainer.innerHTML = sponsersContainerContent;
 }
+
