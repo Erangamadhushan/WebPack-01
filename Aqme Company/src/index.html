@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aqme Company</title>
+        <!-- <link rel="stylesheet" href="./output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        screens: {
+                        "custom":"980px",
+                    },
+                    
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="scroll-smooth">
+        <!-- header title-->
+        <div class="w-full bg-black p-2 py-3"> <h3 class="text-center text-white">Aqme Company (PVT) Ltd.</h3> </div>
+
+        <!-- navbar content -->
+        <header class="w-full flex justify-between items-center bg-gray-200"></header>
+
+        <!--mobile navbar content-->
+        <div id="panel" class="hidden"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2  my-4 p-4 openContent"> </div>
+
+        <!-- aboutus content here -->
+        <div class="grid grid-cols-1  my-4 p-4 py-10"> <div class="OpenDescription max-w-4xl mx-auto" id="aboutUs"></div> </div>
+            
+        
+        <!--Start script files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./scripts/jqueryAction.js"></script>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
+<!-- End the html page here -->
