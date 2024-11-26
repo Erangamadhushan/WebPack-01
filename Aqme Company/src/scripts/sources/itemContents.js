@@ -3,7 +3,7 @@ export const itemQuatar = [
         img:"./images/watches/watchtype1.png",
         brandName:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         category:'Category1',
-        price:120.00,
+        price:"120.00",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda quod, voluptatem ipsa eum eaque ad harum accusantium atque veniam facere voluptatum sed!"
 
     },
@@ -11,21 +11,21 @@ export const itemQuatar = [
         img:"./images/watches/watchtype4.png",
         brandName:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         category:'Category2',
-        price:150.00,
+        price:"150.00",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda quod, voluptatem ipsa eum eaque ad harum accusantium atque veniam facere voluptatum sed!"
     },
     {
         img:"./images/watches/watchtype7.png",
         brandName:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         category:'Category3',
-        price:220.00,
+        price:"220.00",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda quod, voluptatem ipsa eum eaque ad harum accusantium atque veniam facere voluptatum sed!"
     },
     {
         img:"./images/watches/watchtype10.png",
         brandName:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         category:'Category4',
-        price:90.00,
+        price:"90.00",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda quod, voluptatem ipsa eum eaque ad harum accusantium atque veniam facere voluptatum sed!"
     }
 ];
@@ -114,6 +114,6 @@ export const allItems = [
         category:'Category4',
         price:210.00,
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, assumenda quod, voluptatem ipsa eum eaque ad harum accusantium atque veniam facere voluptatum sed!"
-    },
+    }
     
 ]

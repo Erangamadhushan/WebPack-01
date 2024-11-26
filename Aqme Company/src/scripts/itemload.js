@@ -1,13 +1,8 @@
-import {main, aboutUs} from './sources/mainContent.js';
-import {itemQuatar} from './sources/itemContents.js';
+import {allItems} from './sources/itemContents.js';
 
 window.addEventListener("DOMContentLoaded", () => {
-    renderOpenContent(main);
-    renderLineContent();
-    renderProductOverview(itemQuatar);
-    
+    renderAllProductOverview(allItems);
 });
-document.body.style.scrollBehavior = "Smooth"
 
 // Load header section here
 
@@ -44,61 +39,15 @@ document.querySelector('#panel').innerHTML = `
         <a href="#" class="text-xl font-semibold hover:font-bold text-center py-3">FAQ</a>
     </nav>
 `;
+ 
 
-
-// Load open content here
-
-let openContainer = document.querySelector('.openContent');
-function renderOpenContent(items) {
-    openContainer.innerHTML = " ";
-    let openContent = " ";
-    let leftContent = items[0];
-    let rightContent = items[1];
-
-    openContent += `
-        <div class=" py-10 overflow-hidden rounded-lg items-center">
-            <img src="${leftContent.src}" alt="" class=""/>
-        </div>
-    `;
-    openContent += `
-        <div class=" p-5 py-10 flex flex-col gap-2">
-            <h1 class="text-5xl text-center font-bold text-red-600 pb-5">Special OFfer</h1>
-            <p class="text-gray-800">${rightContent.subtext}</p>
-            <h2 class="text-3xl text-gray-800">${rightContent.topic}</h2>
-            <h1 class="text-4xl text-gray-800 font-bold">$${rightContent.price}</h1>
-            <p class="text-lg py-4">${rightContent.desc}</p>
-            <div>
-                <a href="products.html" class="bg-gray-800 hover:bg-black text-white p-4 px-10 text-lg font-bold rounded-lg">Explorer More..</a>
-            </div>
-        </div>
-        
-    `;
-
-    openContainer.innerHTML = openContent; 
-}
-
-
-// Load line content here
-
-let lineContainer = document.querySelector(".OpenDescription");
-
-function renderLineContent() {
-    lineContainer.innerHTML = `
-        <h2 class="text-center text-gray-800 text-4xl font-bold py-5">${aboutUs.topic}</h2>
-        <p class="text-lg text-center">${aboutUs.desc}</p>
-    `;
-}
-
-
-// Load product explorer section here
-
-let productsExplorerContainer = document.querySelector('.productsExplorer');
-
-function renderProductOverview(quaterItems) {
-    productsExplorerContainer.innerHTML = " ";
-    let productsExplorerContent = " ";
-    quaterItems.forEach((item ) => {
-        productsExplorerContent += `
+//Load all items into the products.html files
+let renderAllItemContainer = document.querySelector('.loadAllItems');
+function renderAllProductOverview(items) {
+    renderAllItemContainer.innerHTML = " ";
+    let renderAllItemContent = " ";
+    items.forEach((item) => {
+        renderAllItemContent += `
             <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative" >
                 <div class="">
                     <div class="max-w-[350px] mx-auto my-10">
@@ -114,8 +63,8 @@ function renderProductOverview(quaterItems) {
                     <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" onclick="addToCartProductItem('${item.img}', '${item.brandName}', '${item.price}', '${item.desc}')" >Add to Cart</button>
                 </div>
             </div>
-        `;
+        `
     });
-    productsExplorerContainer.innerHTML = productsExplorerContent;
-}
 
+    renderAllItemContainer.innerHTML = renderAllItemContent;
+}
