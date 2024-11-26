@@ -77,7 +77,7 @@ function renderOpenContent(items) {
 }
 
 
-// Loac line content here
+// Load line content here
 
 let lineContainer = document.querySelector(".OpenDescription");
 
@@ -86,4 +86,28 @@ function renderLineContent() {
         <h2 class="text-center text-gray-800 text-4xl font-bold py-5">${aboutUs.topic}</h2>
         <p class="text-lg text-center">${aboutUs.desc}</p>
     `;
+}
+
+
+// Load product explorer section here
+
+let productsExplorerContainer = document.querySelector('.productsExplorer');
+
+function renderProductOverview(quaterItems) {
+    productsExplorerContainer.innerHTML = " ";
+    let productsExplorerContent = " ";
+    quaterItems.forEach((item ) => {
+        productsExplorerContent += `
+            <div class="col-span-12 max-w-[390px] justify-center items-center custom:col-span-3 md:col-span-4 ms:col-span-6 grid rounded-md border-green-200" >
+                <div class="max-w-[300px] mx-auto">
+                    <img src="${item.img}" alt="${item.desc}" style="width:50%;"/>
+                </div>
+                <div>
+                    <h2 class="text-center font-semibold">${item.brandName}</h2>
+                    <h3 class="text-center font-bold">${item.price}</h3>
+                </div>
+            </div>
+        `;
+    });
+    productsExplorerContainer.innerHTML = productsExplorerContent;
 }
