@@ -1,10 +1,12 @@
 import {content1,content2,content3,content4} from './footer.js';
 import {subDetails1, subDetails2} from './subscription.js';
+import {contact} from './contactDetails.js';
 
 let footercontent = document.querySelector('.footer');
 window.addEventListener('DOMContentLoaded',() => {
     loadFooter();
     loadSubDetails(subDetails1, subDetails2);
+    loadContactUsDetails(contact);
 })
 
 function loadFooter(){
@@ -62,6 +64,18 @@ function loadFooter(){
     console.log(footerContent);
     footer.innerHTML = footerContent;
 }
+
+//load userComplains
+
+let complainContainer = document.querySelector('#complain');
+function loadComplain() {
+    complainContainer.innerHTML = `
+        <h1 class="py-5 my-4">Nothing to show Complains</h1>
+    `;
+}
+
+// call the userComplains function
+loadComplain();
 
 let welcomeNote = " Where beauty meets science, and your unique style shines! We’re dedicated to providing top-quality, innovative cosmetic services that bring out the best in you. Our team of beauty experts and skincare specialists work with leading products and techniques to offer you a luxurious, tailored experience.";
 let services_content = [];
