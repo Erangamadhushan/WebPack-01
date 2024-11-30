@@ -16,7 +16,8 @@ window.addEventListener("DOMContentLoaded", () => {
         let clickableButton = tr.querySelector('.deleteButton button');
         clickableButton.textContent = "Delete Item";
         clickableButton.addEventListener("click", () => {
-            console.log(element.gTitle);
+            localStorage.setItem("itemList",currentPurchasedItem);
+            window.location.replace("./cartProducts.html");
         })
 
         tableBody.appendChild(tr);

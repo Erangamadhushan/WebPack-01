@@ -86,6 +86,15 @@ function addCardItem() {
             cartItem = JSON.stringify(cartItem); 
             localStorage.setItem('itemList',cartItem);
         }
-    })
+    });
+
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Add to cart Successfully !",
+        showConfirmButton: true,
+        timer: 3500
+      });
+
     
 }
