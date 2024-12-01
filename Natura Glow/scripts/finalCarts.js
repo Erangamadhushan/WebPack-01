@@ -12,11 +12,13 @@ function loadfunction() {
         const template = document.querySelector(".template").content;
         let tr = template.cloneNode(true);
         tr.querySelector('.gTitle').textContent = element.title;
-        console.log(element.title);
+        //console.log(element.title);
         tr.querySelector('.gPrice').textContent = element.price;
-        console.log(element.price);
+        //console.log(element.price);
         tr.querySelector('.gDesc').textContent = element.desc;
-        console.log(element.desc);
+        //console.log(element.desc);
+        tr.querySelector('.gQuantity').textContent = element.quantity;
+        tr.querySelector('.gTotal').textContent = element.totalPrice;
         let clickableButton = tr.querySelector('.deleteButton button');
         clickableButton.textContent = "Delete Item";
         clickableButton.addEventListener("click", () => {

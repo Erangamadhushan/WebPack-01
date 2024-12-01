@@ -23,13 +23,13 @@ function loadContent() {
             <h2 class="text-center main_heading">${ItemDetails.getTitle}</h2>
             <p class="text-description main_description">${ItemDetails.getDesc}</p>
             <div class="my-3">
-                <input type="text" value="$${ItemDetails.getPrice}" readonly/>
+                <input type="text" id="price" value="$${ItemDetails.getPrice}" readonly/>
                 <input type="number" max="10" min="1" value="1" id="quantity"/>
             </div>
             <div class="row row-cols-2">
                 <div>
                     <h3>Total Price :</h3>
-                    <h4 class="main-description">$<span id="totalValue">${ItemDetails.getPrice * getQuantity}<span></h4>
+                    <h4 class="main-description">$<span id="totalValue">${parseInt(ItemDetails.getPrice) * parseInt(getQuantity)}<span></h4>
                 </div>
                 <div style="display:grid;place-items:center">
                     <button type="button" class="main_btn" onclick="addCardItem()">Add to Card</button>
@@ -69,8 +69,11 @@ function addCardItem() {
     let title = currentItem.getTitle;
     let price = currentItem.getPrice;
     let desc = currentItem.getDesc;
+    let quantity = document.getElementById('quantity').value;
+    console.log(quantity);
+    let totalPrice = price* quantity; 
 
-    let newItem = {title, price, desc};
+    let newItem = {title, price, desc,quantity, totalPrice};
     console.log(newItem);
     console.log(itemsList);
     itemsList.unshift(newItem);
