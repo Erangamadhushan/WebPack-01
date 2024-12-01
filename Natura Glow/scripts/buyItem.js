@@ -1,14 +1,14 @@
 let getItemContainers = document.querySelector('.getItemContainer'); 
 let ItemContent = " ";
 
-window.addEventListener("DOMContentLoaded", () => {
-    loadObjects();
-})
+// window.addEventListener("DOMContentLoaded", () => {
+//     loadObjects();
+// });
 function loadContent() {
     getItemContainers.innerHTML = " ";
     let ItemDetails = sessionStorage.getItem('currentItem');
     ItemDetails = JSON.parse(ItemDetails);
-    console.log(ItemDetails);
+    //console.log(ItemDetails);
     let getQuantity = 1;
 
     ItemContent += `
@@ -58,35 +58,26 @@ function orderComfirm() {
       });
 }
 
-function loadObjects(){
-    let cartItem = [];
-    let initialValues = {
-        gTitle:"",
-        gPrice:"",
-        gDesc:""
-    };
-    cartItem.push(initialValues);
-    cartItem = JSON.stringify(cartItem);
-    console.log(cartItem);
-    localStorage.setItem('itemList',cartItem);
-}
+
 function addCardItem() {
-    let cartItem = localStorage.getItem('itemList');
+    
+    let itemsList = localStorage.getItem('itemList');
     let currentItem = sessionStorage.getItem('currentItem');
+    itemsList = JSON.parse(itemsList);
     currentItem = JSON.parse(currentItem);
-    cartItem = JSON.parse(cartItem);
-    cartItem.forEach((element) => {
-        if(element.gTitle != currentItem.gTitle) {
-            console.log(currentItem.gTitle)
-            let gTitle = currentItem.getTitle;
-            let gPrice = currentItem.getPrice;
-            let gDesc = currentItem.getDesc;
-            let newItem = {gTitle,gPrice,gDesc};
-            cartItem.push(newItem);
-            cartItem = JSON.stringify(cartItem); 
-            localStorage.setItem('itemList',cartItem);
-        }
-    });
+
+    let title = currentItem.getTitle;
+    let price = currentItem.getPrice;
+    let desc = currentItem.getDesc;
+
+    let newItem = {title, price, desc};
+    console.log(newItem);
+    console.log(itemsList);
+    itemsList.unshift(newItem);
+    console.log(itemsList);
+    itemsList  = JSON.stringify(itemsList);
+    localStorage.setItem('itemList',itemsList);
+
 
     Swal.fire({
         position: "center",
@@ -95,6 +86,4 @@ function addCardItem() {
         showConfirmButton: true,
         timer: 3500
       });
-
-    
 }

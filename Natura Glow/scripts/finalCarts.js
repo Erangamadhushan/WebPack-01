@@ -1,25 +1,32 @@
 window.addEventListener("DOMContentLoaded", () => {
+    loadfunction();
+});
+
+function loadfunction() {
     let currentPurchasedItem = localStorage.getItem('itemList');
     currentPurchasedItem = JSON.parse(currentPurchasedItem);
-    //console.log(currentPurchasedItem);
+    console.log(currentPurchasedItem);
     let tableBody = document.querySelector('#table_data');
     
-    currentPurchasedItem.forEach((element) => {
+    currentPurchasedItem.forEach((element,index) => {
         const template = document.querySelector(".template").content;
         let tr = template.cloneNode(true);
-        tr.querySelector('.gTitle').textContent = element.gTitle;
-        console.log(element.gTitle);
-        tr.querySelector('.gPrice').textContent = element.gPrice;
-        console.log(element.gPrice);
-        tr.querySelector('.gDesc').textContent = element.gDesc;
-        console.log(element.gDesc);
+        tr.querySelector('.gTitle').textContent = element.title;
+        console.log(element.title);
+        tr.querySelector('.gPrice').textContent = element.price;
+        console.log(element.price);
+        tr.querySelector('.gDesc').textContent = element.desc;
+        console.log(element.desc);
         let clickableButton = tr.querySelector('.deleteButton button');
         clickableButton.textContent = "Delete Item";
         clickableButton.addEventListener("click", () => {
-            localStorage.setItem("itemList",currentPurchasedItem);
-            window.location.replace("./cartProducts.html");
-        })
+            currentPurchasedItem.splice(index, 1);
+            currentPurchasedItem = JSON.stringify(currentPurchasedItem);
+            localStorage.setItem("itemList", currentPurchasedItem);
+            window.location.reload();
+            
+        });
 
         tableBody.appendChild(tr);
     });
-})
+}
