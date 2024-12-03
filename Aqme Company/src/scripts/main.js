@@ -1,10 +1,11 @@
-import {main, aboutUs} from './sources/mainContent.js';
+import {main, aboutUs, subContent} from './sources/mainContent.js';
 import {itemQuatar} from './sources/itemContents.js';
 
 window.addEventListener("DOMContentLoaded", () => {
     renderOpenContent(main);
     renderLineContent();
     renderProductOverview(itemQuatar);
+    renderSubContent(subContent);
     
 });
 document.body.style.scrollBehavior = "Smooth"
@@ -119,3 +120,30 @@ function renderProductOverview(quaterItems) {
     productsExplorerContainer.innerHTML = productsExplorerContent;
 }
 
+
+let subContentContainer = document.querySelector('.subContentContainer');
+function renderSubContent(totalContent) {
+    subContentContainer.innerHTML = "";
+    let subContentContainerContent = "";
+    let imageContent = totalContent[0];
+    let textContent = totalContent[1];
+    subContentContainerContent += `
+        <div class="">
+            <img src="${imageContent.src}" alt="${imageContent.alt}" /> 
+        </div>
+    `;
+
+    subContentContainerContent += `
+        <div class="p-5">
+            <h2 class="text-center font-bold text-2xl pb-5">${textContent.title}</h2>
+            <p class="py-5">${textContent.content1}</p>
+            <p class="pb-2">${textContent.content2}</p>
+            <p class="font-semibold text-center text-lg">${textContent.endContent}</p>
+            <div class="justify-center pt-4">
+                <button type="button" class="bg-gray-800 text-white rounded-md p-5 hover:bg-gray-700">Explorer More ..</button>
+            </div>
+        </div>
+    `;
+
+    subContentContainer.innerHTML = subContentContainerContent;
+}
