@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     renderProductOverview(itemQuatar);
     renderSubContent(subContent);
     loadFooter(footerContent);
+    loadFooterEnd();
     
 });
 document.body.style.scrollBehavior = "Smooth"
@@ -150,6 +151,7 @@ function renderSubContent(totalContent) {
 }
 
 const footerContainer = document.querySelector('.footer');
+const footerEndContainer = document.querySelector('.footerEnd');
 function loadFooter(footerContent) {
     footerContainer.innerHTML = "";
     let footerContainer1 = footerContent[0];
@@ -204,4 +206,31 @@ function loadFooter(footerContent) {
     `;
 
     footerContainer.innerHTML = loadFooterContent;
+}
+
+function loadFooterEnd() {
+    footerEndContainer.innerHTML = "";
+    let footerEndContent = " ";
+    footerEndContent += `
+        <div class="">
+            <img src="" alt="Lorem ipsum dolor"/>
+            <h2 class="text-3xl">Lorem ipsum dolor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    `;
+    footerEndContent += `
+        <div class="">
+            <input type="text" name="text" id="submit"/>
+            <input type="submit" value="subcribe"/>
+        </div>
+    `;
+    footerEndContent += `
+        <div class="flex justify-center">
+            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
+            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
+            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
+        </div>
+    `;
+
+    footerEndContainer.innerHTML = footerEndContent;
 }

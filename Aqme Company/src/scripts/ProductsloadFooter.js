@@ -1,4 +1,4 @@
-import { footerContent } from "./sources/mainContent";
+import { footerContent } from "./sources/mainContent.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     loadFooter(footerContent);
