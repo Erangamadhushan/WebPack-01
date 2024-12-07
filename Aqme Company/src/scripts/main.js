@@ -19,8 +19,8 @@ document.querySelector('header').innerHTML = `
     <nav class="justify-center items-center space-x-4  hidden custom:block">
         <a href="index.html" class="text-xl font-semibold hover:font-bold px-4">Home</a>
         <a href="index.html#aboutUs" class="text-xl text-semibold hover:font-bold">About Us</a>
-        <a href="#" class="text-xl font-semibold hover:font-bold">Products</a>
-        <a href="#" class="text-xl font-semibold hover:font-bold">FAQ</a>
+        <a href="products.html" class="text-xl font-semibold hover:font-bold">Products</a>
+        <a href="faq.html" class="text-xl font-semibold hover:font-bold">FAQ</a>
     </nav>
     <div class="items-center hidden md:block justify-center px-2">
         <input class="p-2 border focus:border-green-200 focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>

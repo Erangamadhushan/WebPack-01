@@ -33,13 +33,21 @@
         
         <div class="footer grid grid-cols-1 lg:grid-cols-5 custom:grid-cols-3 sm:grid-cols-2 p-5 py-10 gap-3 mt-10 bg-gray-900 text-white"></div>
         <div class="footerEnd grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 py-10 gap-3 bg-gray-800 text-white"></div>
+        <div class="bg-gray-900 text-white text-center font-bold text-xl p-4">Powered by EM956 Community</div>
 
 
         
         <script src="../aos-master/aos-master/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                disable:'mobile'
+            });
         </script>
+        <!-- <script>
+            AOS.init({
+              disable: 'mobile'
+            });
+          </script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./scripts/jqueryAction.js"></script>
         <!-- <script type="module" src="./scripts/main.js"></script> -->
