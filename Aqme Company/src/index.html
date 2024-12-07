@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aqme Company</title>
         <!-- <link rel="stylesheet" href="./output.css"> -->
+        <link href="../aos-master/aos-master/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -35,7 +36,7 @@
         <div class="grid grid-cols-1 bg-gray-300  my-10 p-4 py-20"> <div class="OpenDescription max-w-4xl mx-auto" id="aboutUs"></div> </div>
 
         <!-- product explorer section start here -->
-        <div ><h1 class="text-center text-4xl font-bold">Explorer Products</h1><p class="text-center py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsa dolor, tempora cum inventore iste rerum officia temporibus vitae at assumenda et adipisci totam maxime porro quisquam earum non incidunt blanditiis doloribus animi ratione excepturi aut deserunt? Facere, commodi laudantium.</p></div>
+        <div ><h1 class="text-center text-4xl font-bold">Explorer Products</h1><p class="text-center py-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsa dolor, tempora cum inventore iste rerum officia temporibus vitae at assumenda et adipisci totam maxime porro quisquam earum non incidunt blanditiis doloribus animi ratione excepturi aut deserunt? Facere, commodi laudantium.</p></div>
         <div class="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 custom:grid-cols-4 my-10 gap-3 place-items-center productsExplorer"></div>
         <div class="flex justify-center items-center my-5">
         <a href="./products.html" class="bg-gray-600  p-10 py-4 hover:bg-black text-white rounded-md">Explorer</a>
@@ -46,6 +47,10 @@
         <div class="footerEnd grid grid-cols-1 md:grid-cols-3  p-5 py-10 gap-3 bg-gray-800 text-white"></div>
 
         <!--Start script files-->
+        <script src="../aos-master/aos-master/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./scripts/jqueryAction.js"></script>
         <script type="module" src="./scripts/main.js"></script>

@@ -48,7 +48,7 @@ function renderAllProductOverview(items) {
     let renderAllItemContent = " ";
     items.forEach((item) => {
         renderAllItemContent += `
-            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative" >
+            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500" data-aos-delay="200">
                 <div class="">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>

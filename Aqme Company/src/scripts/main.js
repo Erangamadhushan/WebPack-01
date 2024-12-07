@@ -64,7 +64,7 @@ function renderOpenContent(items) {
         </div>
     `;
     openContent += `
-        <div class=" p-5 py-10 flex flex-col gap-2">
+        <div class=" p-5 py-10 flex flex-col gap-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
             <h1 class="text-5xl text-center font-bold text-red-600 pb-5">Special OFfer</h1>
             <p class="text-gray-800">${rightContent.subtext}</p>
             <h2 class="text-3xl text-gray-800">${rightContent.topic}</h2>
@@ -87,8 +87,8 @@ let lineContainer = document.querySelector(".OpenDescription");
 
 function renderLineContent() {
     lineContainer.innerHTML = `
-        <h2 class="text-center text-gray-800 text-4xl font-bold py-5">${aboutUs.topic}</h2>
-        <p class="text-lg text-center">${aboutUs.desc}</p>
+        <h2 class="text-center text-gray-800 text-4xl font-bold py-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">${aboutUs.topic}</h2>
+        <p class="text-lg text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="300">${aboutUs.desc}</p>
     `;
 }
 
@@ -102,7 +102,7 @@ function renderProductOverview(quaterItems) {
     let productsExplorerContent = " ";
     quaterItems.forEach((item ) => {
         productsExplorerContent += `
-            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative" >
+            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
                 <div class="">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>
@@ -130,13 +130,13 @@ function renderSubContent(totalContent) {
     let imageContent = totalContent[0];
     let textContent = totalContent[1];
     subContentContainerContent += `
-        <div class="">
+        <div class="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
             <img src="${imageContent.src}" alt="${imageContent.alt}" /> 
         </div>
     `;
 
     subContentContainerContent += `
-        <div class="p-5">
+        <div class="p-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
             <h2 class="text-center font-bold text-2xl pb-5">${textContent.title}</h2>
             <p class="py-5">${textContent.content1}</p>
             <p class="pb-2">${textContent.content2}</p>
