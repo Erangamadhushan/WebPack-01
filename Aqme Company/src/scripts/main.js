@@ -226,9 +226,11 @@ function loadFooterEnd() {
     `;
     footerEndContent += `
         <div class="flex justify-center">
-            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
-            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
-            <img src="" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/>
+            <a href=""><img src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
+            <a href=""><img src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
         </div>
     `;
 
