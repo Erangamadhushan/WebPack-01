@@ -95,15 +95,15 @@ function loadFooterEnd() {
     let footerEndContent = " ";
     footerEndContent += `
         <div class="">
-            <img src="" alt="Lorem ipsum dolor"/>
-            <h2 class="text-3xl">Lorem ipsum dolor</h2>
+            <img src="./images/main.jpg" style="width:150px;" alt="Lorem ipsum dolor"/>
+            <h2 class="text-3xl">Aqme Luxury Watch Selling Company</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     `;
     footerEndContent += `
         <div class="">
-            <input type="text" name="text" id="submit"/>
-            <input type="submit" value="subcribe"/>
+            <input type="text" name="text" class="p-2 w-[300px] rounded-md" id="submit"/>
+            <input type="submit" class="bg-gray-500 p-2 rounded-md hover:bg-gray-600" value="subcribe"/>
         </div>
     `;
     footerEndContent += `
