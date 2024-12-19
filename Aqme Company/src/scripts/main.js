@@ -113,8 +113,8 @@ function renderProductOverview(quaterItems) {
                     </div>
                 </div>
                 <div class="flex place-items-center  mt-4 gap-3">
-                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black" onclick="buyProductItem('${item.img}', '${item.brandName}', '${item.price}', '${item.desc}')" >Buy Now</button>
-                    <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" onclick="addToCartProductItem('${item.img}', '${item.brandName}', '${item.price}', '${item.desc}')" >Add to Cart</button>
+                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem(${item})">Buy Now</button>
+                    <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" >Add to Cart</button>
                 </div>
             </div>
         `;
@@ -236,3 +236,5 @@ function loadFooterEnd() {
 
     footerEndContainer.innerHTML = footerEndContent;
 }
+
+
