@@ -29,12 +29,31 @@
         
         <!-- Load buying item content -->
         <div class=" loadbuyItem"></div>
+        <table>
+            <thead>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Description</th>
+                <th>Status</th>
+            </thead>
+        </table>
 
         <div class="footer grid grid-cols-1 lg:grid-cols-5 custom:grid-cols-3 sm:grid-cols-2 p-5 py-10 gap-3 mt-10 bg-gray-900 text-white"></div>
         <div class="footerEnd grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 py-10 gap-3 bg-gray-800 text-white"></div>
         <div class="bg-gray-900 text-white text-center font-bold text-xl p-4">Powered by EM956 Community</div>
 
 
+        <!-- Table template here-->
+        <template>
+            <tr>
+                <td class="productName"></td>
+                <td class="productPrice"></td>
+                <td class="productDesc"></td>
+                <td>
+                    <button type="button" class="bg-red-500 p-5 rounded-md">Remove Product</button>
+                </td>
+            </tr>
+        </template>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
