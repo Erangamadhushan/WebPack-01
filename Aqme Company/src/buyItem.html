@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aqme Company</title>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="./styles/main.css"> -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -29,13 +30,16 @@
         
         <!-- Load buying item content -->
         <div class=" loadbuyItem"></div>
-        <table>
-            <thead>
-                <th>Item Name</th>
-                <th>Item Price</th>
-                <th>Item Description</th>
-                <th>Status</th>
+        <table class=" max-w-[1000px] mx-auto border border-gray-800 w-auto ">
+            <thead class="bg-gray-800  text-white space-x-4">
+                <th class="p-5 px-10">Item Name</th>
+                <th class="px-10">Item Price</th>
+                <th class="px-10">Item Description</th>
+                <th class="px-10">Status</th>
             </thead>
+            <tbody>
+
+            </tbody>
         </table>
 
         <div class="footer grid grid-cols-1 lg:grid-cols-5 custom:grid-cols-3 sm:grid-cols-2 p-5 py-10 gap-3 mt-10 bg-gray-900 text-white"></div>
@@ -50,7 +54,7 @@
                 <td class="productPrice"></td>
                 <td class="productDesc"></td>
                 <td>
-                    <button type="button" class="bg-red-500 p-5 rounded-md">Remove Product</button>
+                    <button type="button" class="bg-red-500 p-2 rounded-md itemRemove">Remove Product</button>
                 </td>
             </tr>
         </template>
