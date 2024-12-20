@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text-2xl font-bold">${buyItem.brandName}</h2>
-                <p class="text-xl font-semibold">${buyItem.price}</p>
+                <p class="text-xl font-semibold">$ ${buyItem.price}</p>
                 <p class="text-lg font-semibold">${buyItem.desc}</p>
                 <button class="bg-black text-white p-2 mt-4 rounded-lg" onclick="addToCartProductItem('${buyItem}')">Add to Cart</button>
             </div>

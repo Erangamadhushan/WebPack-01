@@ -23,8 +23,8 @@ document.querySelector('header').innerHTML = `
         <button class="bg-black p-2 text-white">Search</button>
     </div>
     <div class="hidden md:block space-x-5">
-        <button class="bg-gray-300 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
-        <button class="bg-gray-300 p-2"><img src="./icons/user.png" style="width:30px;"/></button>
+        <button onclick="visitCartproducts()" class="bg-gray-300 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
+        <button onclick="visitUserprofile()" class="bg-gray-300 p-2"><img src="./icons/user.png" style="width:30px;"/></button>
     </div>
     <div class=" p-3">
         <button  class="bg-black text-3xl text-white p-1 px-3 rounded-lg custom:hidden" id="flip">&#9776;</button>
