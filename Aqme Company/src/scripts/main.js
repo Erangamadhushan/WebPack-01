@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     renderSubContent(subContent);
     loadFooter(footerContent);
     loadFooterEnd();
-    
+     
 });
 document.body.style.scrollBehavior = "Smooth"
 
@@ -18,7 +18,7 @@ document.querySelector('header').innerHTML = `
     <h2 class="text-2xl font-bold px-3 py-5">Aqme Company</h2>
     <nav class="justify-center items-center space-x-4  hidden custom:block">
         <a href="index.html" class="text-xl font-semibold hover:font-bold px-4">Home</a>
-        <a href="index.html#aboutUs" class="text-xl text-semibold hover:font-bold">About Us</a>
+        <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold">About Us</a>
         <a href="products.html" class="text-xl font-semibold hover:font-bold">Products</a>
         <a href="faq.html" class="text-xl font-semibold hover:font-bold">FAQ</a>
     </nav>
@@ -43,8 +43,8 @@ document.querySelector('#panel').innerHTML = `
     <nav class="justify-center items-center grid grid-cols-1  px-3 custom:hidden">
         <a href="index.html" class="text-xl font-semibold hover:font-bold text-center py-3" >Home</a>
         <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold text-center py-3">About Us</a>
-        <a href="#" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>
-        <a href="#" class="text-xl font-semibold hover:font-bold text-center py-3">FAQ</a>
+        <a href="./products.html" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>
+        <a href="./faq.html" class="text-xl font-semibold hover:font-bold text-center py-3">FAQ</a>
     </nav>
 `;
 
@@ -113,7 +113,7 @@ function renderProductOverview(quaterItems) {
                     </div>
                 </div>
                 <div class="flex place-items-center  mt-4 gap-3">
-                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem('${item.img}', '${item.desc}', '${item.brandName}', '${item.price}')">Buy Now</button>
+                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')">Buy Now</button>
                     <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" >Add to Cart</button>
                 </div>
             </div>
