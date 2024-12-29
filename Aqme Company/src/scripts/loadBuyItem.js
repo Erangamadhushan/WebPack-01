@@ -10,10 +10,15 @@ window.addEventListener("DOMContentLoaded", () => {
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text-2xl font-bold">$${buyItem.price}</h2>
                 <p class="text-lg font-semibold">${buyItem.desc}</p>
+                <div class="flex py-5 gap-5">
+                    <input type="number" class="border border-gray-900" value="1" onchange="getTotal()" min="1" max="10" id="quantity"/>
+                    <p class="font-bold text-2xl">$<span id="total" item-price="${buyItem.price}"><span></p>
+                </div>
                 <button class="bg-black text-white p-2 mt-4 rounded-lg" onclick="addToCartProductItem('${buyItem}')">Add to Cart</button>
             </div>
         </div>
     `;
+    getTotal();
 });
 
 function addToCartProductItem() {
@@ -41,4 +46,14 @@ function displayCart(productStorage) {
     })
     
 }
+
+function getTotal() {
+    let quantity = parseInt(document.getElementById("quantity").value);
+    let price = document.querySelector("#total").getAttribute("item-price");
+    console.log(price);
+    let grandTotal = quantity * price;
+    document.getElementById('total').innerHTML = grandTotal;
+
+}
+
 
