@@ -25,22 +25,18 @@ function buyProductItem(img, desc, brandName, price) {
 
 function addToCartProductItem(img, desc, brandName, price) {
     // Create a new product item
-    let item = {
-        img: img,
-        desc: desc,
-        brandName: brandName,
-        price:price
-    }
-
-    let cartItem = localStorage.getItem('cartItem');
-    if (cartItem == null) {
-        cartItem = [];
+    let item = {img, desc, brandName, price };
+    
+    let showCartItem = localStorage.getItem('showCartItem');
+    if(showCartItem == null) {
+        showCartItem = [];
     }
     else {
-        cartItem = JSON.parse(cartItem);
+        showCartItem = JSON.parse(showCartItem);
     }
-    // Add the item to the cart item list
-    localStorage.setItem('cartItem', JSON.stringify(item));
+    showCartItem.push(item);
+    localStorage.setItem('showCartItem', JSON.stringify(showCartItem));
+    // Add the item to the current item list
 }
 
 function visitUserprofile() {
