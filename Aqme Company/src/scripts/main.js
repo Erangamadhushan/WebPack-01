@@ -22,13 +22,13 @@ document.querySelector('header').innerHTML = `
         <a href="products.html" class="text-xl font-semibold hover:font-bold">Products</a>
         <a href="faq.html" class="text-xl font-semibold hover:font-bold">FAQ</a>
     </nav>
-    <div class="items-center hidden md:block justify-center px-2">
-        <input class="p-2 border focus:border-green-200 focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>
-        <button class="bg-black p-2 text-white">Search</button>
+    <div class="items-center hidden md:block justify-center px-2 gap-2">
+        <input class="p-2 border focus:border-green-200 rounded-lg text-black focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>
+        <button class="bg-gray-900 p-2 m-1 text-white">Search</button>
     </div>
     <div class="hidden md:block space-x-5">
-        <button onclick="visitCartproducts()" class="bg-gray-300 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
-        <button onclick="visitUserprofile()" class="bg-gray-300 p-2"><img src="./icons/user.png" style="width:30px;"/></button>
+        <button onclick="visitCartproducts()" class="bg-gray-500 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
+        <button onclick="visitUserprofile()" class="bg-gray-500 p-2"><img src="./icons/user.png" style="width:30px;"/></button>
     </div>
     <div class=" p-3">
         <button  class="bg-black text-3xl text-white p-1 px-3 rounded-lg custom:hidden" id="flip">&#9776;</button>
@@ -40,7 +40,7 @@ document.querySelector('header').innerHTML = `
 // Load nav bar into the main html files
 
 document.querySelector('#panel').innerHTML = `
-    <nav class="justify-center items-center grid grid-cols-1  px-3 custom:hidden">
+    <nav class="justify-center items-center grid grid-cols-1 bg-black text-white  px-3 custom:hidden">
         <a href="index.html" class="text-xl font-semibold hover:font-bold text-center py-3" >Home</a>
         <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold text-center py-3">About Us</a>
         <a href="./products.html" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>
@@ -60,7 +60,7 @@ function renderOpenContent(items) {
 
     
     openContent += `
-        <div class=" p-5 py-10 flex flex-col gap-2 text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
+        <div class=" p-5 py-10 flex flex-col gap-2 text-white" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
             <h1 class="text-5xl text-center font-bold text-red-600 pb-5">Special OFfer</h1>
             <p class=" text-white">${rightContent.subtext}</p>
             <h2 class="text-3xl text-white">${rightContent.topic}</h2>
@@ -88,7 +88,7 @@ let lineContainer = document.querySelector(".OpenDescription");
 
 function renderLineContent() {
     lineContainer.innerHTML = `
-        <h2 class="text-center text-gray-800 text-4xl font-bold py-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">${aboutUs.topic}</h2>
+        <h2 class="text-center text-white text-4xl font-bold py-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">${aboutUs.topic}</h2>
         <p class="text-lg text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="300">${aboutUs.desc}</p>
     `;
 }
@@ -103,7 +103,7 @@ function renderProductOverview(quaterItems) {
     let productsExplorerContent = " ";
     quaterItems.forEach((item ) => {
         productsExplorerContent += `
-            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
+            <div class="max-w-[300px] rounded-lg border border-white text-white bg-black duration-200 group hover:bg-gray-900 hover:text-white p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
                 <div class="">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>
@@ -137,7 +137,7 @@ function renderSubContent(totalContent) {
     `;
 
     subContentContainerContent += `
-        <div class="p-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
+        <div class="p-5 text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
             <h2 class="text-center font-bold text-2xl pb-5">${textContent.title}</h2>
             <p class="py-5">${textContent.content1}</p>
             <p class="pb-2">${textContent.content2}</p>
@@ -223,15 +223,19 @@ function loadFooterEnd() {
         <div class="">
             <input type="text" name="text" class="p-2 w-[300px] rounded-md" id="submit"/>
             <input type="submit" class="bg-gray-500 p-2 rounded-md hover:bg-gray-600" value="subcribe"/>
+            <p class="py-4 text-xl">Subscribe to our newsletter</p>
         </div>
     `;
     footerEndContent += `
-        <div class="flex justify-center">
-            <a href=""><img src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
-            <a href=""><img src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+        <div class="flex justify-center flex-col">
+            <p>Copyright 2022 Aqme Luxury Watch Selling Company</p>
+            <div class="flex justify-center gap-2">
+                <a href=""><img src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
+                <a href=""><img src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            </div>
         </div>
     `;
 

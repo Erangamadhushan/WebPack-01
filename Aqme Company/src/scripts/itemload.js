@@ -48,7 +48,7 @@ function renderAllProductOverview(items) {
     let renderAllItemContent = " ";
     items.forEach((item) => {
         renderAllItemContent += `
-            <div class="max-w-[300px] rounded-lg border border-gray-800 p-4 mt-4 relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500" data-aos-delay="200">
+            <div class="max-w-[300px] rounded-lg border border-white text-white bg-black duration-200 group hover:bg-gray-900 hover:text-white p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
                 <div class="">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>
@@ -59,8 +59,8 @@ function renderAllProductOverview(items) {
                     </div>
                 </div>
                 <div class="flex place-items-center  mt-4 gap-3">
-                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black" onclick="buyProductItem('${item.img}' , '${item.desc}', '${item.brandName}', '${item.price}')" >Buy Now</button>
-                    <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" onclick="addToCartProductItem('${item.img}' , '${item.desc}', '${item.brandName}', '${item.price}')" >Add to Cart</button>
+                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')">Buy Now</button>
+                    <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" >Add to Cart</button>
                 </div>
             </div>
         `
