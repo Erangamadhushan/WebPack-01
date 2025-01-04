@@ -60,14 +60,16 @@ function renderOpenContent(items) {
 
     
     openContent += `
-        <div class=" p-5 py-10 flex flex-col gap-2 text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
-            <h1 class="text-5xl text-center font-bold text-red-600 pb-5">Special OFfer</h1>
-            <p class=" text-white">${rightContent.subtext}</p>
-            <h2 class="text-3xl text-white">${rightContent.topic}</h2>
-            <h1 class="text-4xl text-white font-bold">$${rightContent.price}</h1>
-            <p class="text-lg py-4 text-white">${rightContent.desc}</p>
+        <div class=" p-5 flex flex-col gap-2 justify-center text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
             <div>
-                <a href="products.html" class="bg-gray-800 hover:bg-black text-white p-4 px-10 text-lg font-bold rounded-lg">Explorer More..</a>
+                <h1 class="text-5xl text-center font-bold text-red-600 pb-5">Special OFfer</h1>
+                <p class=" text-white">${rightContent.subtext}</p>
+                <h2 class="text-3xl text-white">${rightContent.topic}</h2>
+                <h1 class="text-4xl text-white font-bold">$${rightContent.price}</h1>
+                <p class="text-lg py-4 text-white">${rightContent.desc}</p>
+                <div>
+                    <a href="products.html" class="bg-gray-800 hover:bg-black text-white p-4 px-10 text-lg font-bold rounded-lg">Explorer More..</a>
+                </div>
             </div>
         </div>
         

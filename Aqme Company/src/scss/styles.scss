@@ -12,9 +12,29 @@ table {
       background-color: #f2f2f2;
     }
 }
-.openContent {
-  background-image: url('../images/main.jpg');
+.page-sections {
+  // background-image: url('../images/main.jpg');
+  -webkit-backdrop-filter:blur(2px);
+  backdrop-filter:blur(2px);
+  background-color:#111111bd;
   
+}
+.page-sections1 {
+  // background-image: url('../images/main.jpg');
+  -webkit-backdrop-filter:blur(2px);
+  backdrop-filter:blur(2px);
+  background-color:#1111115d;
+  
+}
+#SearchOption {
+  background-color:transparent;
+  &:hover {
+    background-color:#111111d8;
+  }
+}
+
+#overviewPanel {
+  display:none;
 }
 
 .button-animation {
