@@ -18,6 +18,11 @@
                 }
             }
         </script>
+        <script>
+            window.addEventListener("scroll",() => {
+                document.querySelector("header").classList.toggle('sticky', window.scrollY > 0);
+            })
+        </script>
     </head>
     <body class="bg-black">
         <!-- header title-->
