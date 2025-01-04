@@ -16,3 +16,14 @@ table {
   background-image: url('../images/main.jpg');
   
 }
+
+.button-animation {
+  z-index:-100;
+  opacity:0.2;
+  transform:translate(-100%,100%);
+  translate:all .3s;
+  &:hover {
+    opacity:0.6;
+
+  }
+}

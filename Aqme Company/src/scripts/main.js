@@ -104,7 +104,7 @@ function renderProductOverview(quaterItems) {
     quaterItems.forEach((item ) => {
         productsExplorerContent += `
             <div class="max-w-[300px] rounded-lg border border-white text-white bg-black duration-200 group hover:bg-gray-900 hover:text-white p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
-                <div class="">
+                <div class=" group-hover:text-green-400">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>
                     </div>
@@ -113,9 +113,11 @@ function renderProductOverview(quaterItems) {
                         <h3 class="text-center font-bold">$${item.price}</h3>
                     </div>
                 </div>
-                <div class="flex place-items-center  mt-4 gap-3">
-                    <button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')">Buy Now</button>
-                    <button class="bg-red-600 mx-auto rounded-xl text-white p-3 py-3 hover:bg-black" onclick="addToCartProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')">Add to Cart</button>
+                <div class="grid place-items-center  mt-4 gap-3  ">
+                    <button class=" z-0 bg-red-600 w-[80%] border relative overflow-hidden border-red-600 mx-auto rounded-xl text-white p-3 py-3 group-hover:bg-black group-hover:text-white group-hover:border-green-400 group"  onclick="buyProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')"><span class="z-100 text-white">Add to Cart</span>
+                        <div class="button-animation group-hover:translate-x-0 group-hover:translate-y-0 group-hover:z-0 duration-300 absolute top-0 left-0 w-full min-h-full overflow-hidden bg-green-400"></div>
+                    </button>
+                    
                 </div>
             </div>
         `;
@@ -123,6 +125,7 @@ function renderProductOverview(quaterItems) {
     productsExplorerContainer.innerHTML = productsExplorerContent;
 }
 
+//<button class="bg-blue-600 mx-auto  rounded-xl text-white p-3 py-3 hover:bg-black"  onclick="buyProductItem('${item.img}', '${item.desc}','${item.brandName}',  '${item.price}')">Buy Now</button>
 
 let subContentContainer = document.querySelector('.subContentContainer');
 function renderSubContent(totalContent) {
