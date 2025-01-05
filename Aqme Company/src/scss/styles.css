@@ -64,4 +64,8 @@ header.sticky {
 }
 .button-animation:hover {
   opacity: 0.6;
+}
+
+.signUpSocialMedia:hover {
+  background-color: var(--i);
 }/*# sourceMappingURL=styles.css.map */

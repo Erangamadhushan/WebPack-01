@@ -142,12 +142,12 @@ function renderSubContent(totalContent) {
     `;
 
     subContentContainerContent += `
-        <div class="p-5 text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
+        <div class="p-5 text-white page-sections" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
             <h2 class="text-center font-bold text-2xl pb-5">${textContent.title}</h2>
             <p class="py-5">${textContent.content1}</p>
             <p class="pb-2">${textContent.content2}</p>
             <p class="font-semibold text-center text-lg">${textContent.endContent}</p>
-            <div class="justify-center pt-4">
+            <div class="justify-center p-4">
                 <a href="./products.html" class="bg-gray-800 text-white rounded-md p-5 hover:bg-gray-700">Explorer More ..</a>
             </div>
         </div>
@@ -156,6 +156,7 @@ function renderSubContent(totalContent) {
     subContentContainer.innerHTML = subContentContainerContent;
 }
 
+/* load footer content */
 const footerContainer = document.querySelector('.footer');
 const footerEndContainer = document.querySelector('.footerEnd');
 function loadFooter(footerContent) {
@@ -179,9 +180,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer2.title}</h3>
-            <p><a href="" >${footerContainer2.link1}</a></p>
-            <p><a href="">${footerContainer2.link2}</a></p>
-            <p><a href="">${footerContainer2.link3}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -205,9 +203,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer5.title}</h3>
-            <p><a href="" >${footerContainer5.link1}</a></p>
-            <p><a href="">${footerContainer5.link2}</a></p>
-            <p><a href="">${footerContainer5.link3}</a></p>
         </div>
     `;
 
@@ -226,9 +221,10 @@ function loadFooterEnd() {
     `;
     footerEndContent += `
         <div class="">
+            <p class="py-4 text-xl text-white">Subscribe to our newsletter</p>
             <input type="text" name="text" class="p-2 w-[300px] rounded-md" id="submit"/>
             <input type="submit" class="bg-gray-500 p-2 rounded-md hover:bg-gray-600" value="subcribe"/>
-            <p class="py-4 text-xl">Subscribe to our newsletter</p>
+            
         </div>
     `;
     footerEndContent += `

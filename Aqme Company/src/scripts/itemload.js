@@ -32,7 +32,7 @@ document.querySelector('header').innerHTML = `
 // Load nav bar into the main html files
 
 document.querySelector('#panel').innerHTML = `
-    <nav class="justify-center items-center grid grid-cols-1  px-3 custom:hidden">
+    <nav class="justify-center items-center grid grid-cols-1 bg-black  px-3 custom:hidden">
         <a href="index.html" class="text-xl font-semibold hover:font-bold text-center py-3" >Home</a>
         <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold text-center py-3">About Us</a>
         <a href="./products.html" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>

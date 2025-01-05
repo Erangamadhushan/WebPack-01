@@ -31,17 +31,15 @@ export const subContent = [
 
 export const footerContent = [
     {
-        title:"Lorem ipsum dolor",
-        link1:"Define link 1",
-        link2:"Define link 2",
-        link3:"Define link 3",
-        link4:"Define link 4",
+        title:"Aqme Company PVT Ltd",
+        link1:"Home",
+        link2:"About Us",
+        link3:"Products",
+        link4:"FAQ",
     },
     {
-        title:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        link1:"Define link 1",
-        link2:"Define link 2",
-        link3:"Define link 3",
+        title:"Welcome to Aqme Company, where timeless elegance meets modern sophistication.",
+        
     },
     {
         img:"./images/main.jpg",
@@ -56,10 +54,8 @@ export const footerContent = [
         link3:"Define link 3",
     },
     {
-        title:"Lorem ipsum dolor",
-        link1:"Define link 1",
-        link2:"Define link 2",
-        link3:"Define link 3",
+        title:"Our curated collection of exceptional timepieces combines masterful craftsmanship with contemporary design, helping you find the perfect watch that resonates with your personal style.",
+        
     },
 ]
 

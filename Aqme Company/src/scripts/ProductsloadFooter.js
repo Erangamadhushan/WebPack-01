@@ -28,9 +28,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer2.title}</h3>
-            <p><a href="" >${footerContainer2.link1}</a></p>
-            <p><a href="">${footerContainer2.link2}</a></p>
-            <p><a href="">${footerContainer2.link3}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -54,9 +51,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer5.title}</h3>
-            <p><a href="" >${footerContainer5.link1}</a></p>
-            <p><a href="">${footerContainer5.link2}</a></p>
-            <p><a href="">${footerContainer5.link3}</a></p>
         </div>
     `;
 
@@ -75,6 +69,7 @@ function loadFooterEnd() {
     `;
     footerEndContent += `
         <div class="">
+            <p class="py-4 text-xl text-white">Subscribe to our newsletter</p>
             <input type="text" name="text" class="p-2 w-[300px] rounded-md" id="submit"/>
             <input type="submit" class="bg-gray-500 p-2 rounded-md hover:bg-gray-600" value="subcribe"/>
         </div>

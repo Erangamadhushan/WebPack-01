@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aqme Company</title>
+        <title>Aqme SignUp</title>
+        <link rel="stylesheet" type="text/css" href="scss/styles.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- <link rel="stylesheet" type="text/css" href="./styles/main.css"> -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -25,6 +26,7 @@
         </script>
     </head>
     <body class="bg-black">
+        
         <!-- header title-->
         <div class="w-full bg-black p-2 py-3"> <h3 class="text-center text-white">Aqme Company (PVT) Ltd.</h3> </div>
 
@@ -35,17 +37,14 @@
             <!--mobile navbar content-->
             <div id="panel" class="hidden bg-gray-200"></div>
         </div>
-        
-        <!-- Load buying item content -->
-        <div class=" loadbuyItem p-4"></div>
-        
+
+        <!-- user sign up content loaded by scripts/signupPerformance.js  -->
+        <div class="userSignUpContainer"></div>
 
         <div class="footer grid grid-cols-1 lg:grid-cols-5 custom:grid-cols-3 sm:grid-cols-2 p-5 py-10 gap-3 mt-10 page-sections  text-white"></div>
         <div class="footerEnd grid grid-cols-1 md:grid-cols-3  p-5 py-10 gap-3  page-sections text-white"></div>
         <div class="page-sections text-white text-center font-bold text-xl p-4">Powered by EM956 Community</div>
 
-
-        
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
@@ -55,9 +54,8 @@
         <!-- <script type="module" src="./scripts/main.js"></script> -->
         <script type="module" src="./scripts/loadHeader.js"></script>
         <script type="module" src="./scripts/ProductsloadFooter.js"></script>
-        <script type="text/javascript" src="./scripts/loadBuyItem.js"></script>
         <script src="./scripts/action.js"></script>
+        <script src="./scripts/signupPerformance.js"></script>
         <script type="text/javascript" src="./scripts/pageDirections.js"></script>
     </body>
 </html>
-<!--End the html page here -->

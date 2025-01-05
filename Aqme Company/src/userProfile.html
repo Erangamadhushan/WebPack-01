@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aqme User</title>
+        <link rel="stylesheet" type="text/css" href="scss/styles.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- <link rel="stylesheet" type="text/css" href="./styles/main.css"> -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -29,11 +30,16 @@
         <!-- header title-->
         <div class="w-full bg-black p-2 py-3"> <h3 class="text-center text-white">Aqme Company (PVT) Ltd.</h3> </div>
 
-        <!-- navbar content -->
-        <header class="w-full flex justify-between items-center  text-white"></header>
+        <div class="">
+            <!-- navbar content -->
+            <header class="w-full flex justify-between items-center text-white "></header>
 
-        <!--mobile navbar content-->
-        <div id="panel" class="hidden bg-gray-200"></div>
+            <!--mobile navbar content-->
+            <div id="panel" class="hidden bg-gray-200"></div>
+        </div>
+
+        <!-- load user login content with loginPerformance.js -->
+        <div class="userEntering"> </div>
 
         <div class="footer grid grid-cols-1 lg:grid-cols-5 custom:grid-cols-3 sm:grid-cols-2 p-5 py-10 gap-3 mt-10 page-sections  text-white"></div>
         <div class="footerEnd grid grid-cols-1 md:grid-cols-3  p-5 py-10 gap-3  page-sections text-white"></div>
@@ -49,6 +55,7 @@
         <script type="module" src="./scripts/loadHeader.js"></script>
         <script type="module" src="./scripts/ProductsloadFooter.js"></script>
         <script src="./scripts/action.js"></script>
+        <script src="./scripts/loginPerformance.js"></script>
         <script type="text/javascript" src="./scripts/pageDirections.js"></script>
     </body>
 </html>

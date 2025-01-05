@@ -26,7 +26,7 @@ document.querySelector('header').innerHTML = `
         <button onclick="visitCartproducts()" class="bg-gray-300 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
         <button onclick="visitUserprofile()" class="bg-gray-300 p-2"><img src="./icons/user.png" style="width:30px;"/></button>
     </div>
-    <div class=" p-3">
+    <div class="">
         <button  class="bg-black text-3xl text-white p-1 px-3 rounded-lg custom:hidden" id="flip">&#9776;</button>
     </div>
     
@@ -34,7 +34,7 @@ document.querySelector('header').innerHTML = `
 // Load nav bar into the main html files
 
 document.querySelector('#panel').innerHTML = `
-    <nav class="justify-center items-center grid grid-cols-1  px-3 custom:hidden">
+    <nav class="justify-center items-center grid grid-cols-1 bg-black text-white  px-3 custom:hidden">
         <a href="index.html" class="text-xl font-semibold hover:font-bold text-center py-3" >Home</a>
         <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold text-center py-3">About Us</a>
         <a href="./products.html" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>
@@ -65,9 +65,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer2.title}</h3>
-            <p><a href="" >${footerContainer2.link1}</a></p>
-            <p><a href="">${footerContainer2.link2}</a></p>
-            <p><a href="">${footerContainer2.link3}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -91,9 +88,6 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer5.title}</h3>
-            <p><a href="" >${footerContainer5.link1}</a></p>
-            <p><a href="">${footerContainer5.link2}</a></p>
-            <p><a href="">${footerContainer5.link3}</a></p>
         </div>
     `;
 
@@ -112,6 +106,7 @@ function loadFooterEnd() {
     `;
     footerEndContent += `
         <div class="">
+            <p class="py-4 text-xl text-white">Subscribe to our newsletter</p>
             <input type="text" name="text" class="p-2 w-[300px] rounded-md" id="submit"/>
             <input type="submit" class="bg-gray-500 p-2 rounded-md hover:bg-gray-600" value="subcribe"/>
         </div>
