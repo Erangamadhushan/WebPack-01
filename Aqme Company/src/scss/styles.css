@@ -73,4 +73,8 @@ img.socialMedia {
 }
 img.socialMedia:hover {
   filter: grayscale(0);
+}
+
+#buyItemContainer {
+  background-color: rgba(17, 17, 17, 0.8156862745);
 }/*# sourceMappingURL=styles.css.map */
