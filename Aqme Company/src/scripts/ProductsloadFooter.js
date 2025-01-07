@@ -19,10 +19,10 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer1.title}</h3>
-            <p><a href="" >${footerContainer1.link1}</a></p>
-            <p><a href="">${footerContainer1.link2}</a></p>
-            <p><a href="">${footerContainer1.link3}</a></p>
-            <p><a href="">${footerContainer1.link4}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="" >${footerContainer1.link1}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="">${footerContainer1.link2}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="">${footerContainer1.link3}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="">${footerContainer1.link4}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -33,19 +33,14 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <img src="${footerContainer3.img}" alt="" style="width:120px;"/>
-            <p><a href="" >${footerContainer3.link1}</a></p>
-            <p><a href="">${footerContainer3.link2}</a></p>
-            <p><a href="">${footerContainer3.link3}</a></p>
         </div>
     `;
     
     loadFooterContent += `
-        <div class="">
+       <div class="">
             <h3>${footerContainer4.title}</h3>
-            <p><a href="" >${footerContainer4.link1}</a></p>
-            <p><a href="">${footerContainer4.link2}</a></p>
-            <p><a href="">${footerContainer4.link3}</a></p>
-            
+            <p class="text-blue-400 hover:underline"><a href="./cartItem.html" >${footerContainer4.link1}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="./userProfile.html">${footerContainer4.link2}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -76,11 +71,11 @@ function loadFooterEnd() {
     `;
     footerEndContent += `
         <div class="flex justify-center">
-            <a href=""><img src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
-            <a href=""><img src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-            <a href=""><img src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img class="socialMedia" src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img class="socialMedia" src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
+            <a href=""><img class="socialMedia" src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img class="socialMedia" src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+            <a href=""><img class="socialMedia" src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
         </div>
     `;
 

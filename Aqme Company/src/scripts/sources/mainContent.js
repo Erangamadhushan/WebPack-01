@@ -43,15 +43,12 @@ export const footerContent = [
     },
     {
         img:"./images/main.jpg",
-        link1:"Define link 1",
-        link2:"Define link 2",
-        link3:"Define link 3",
     },
     {
-        title:"Lorem ipsum dolor",
-        link1:"Define link 1",
-        link2:"Define link 2",
-        link3:"Define link 3",
+        title:"Aqme Company. world leading watch selling company",
+        link1:"Cart Items",
+        link2:"User Profile",
+        
     },
     {
         title:"Our curated collection of exceptional timepieces combines masterful craftsmanship with contemporary design, helping you find the perfect watch that resonates with your personal style.",

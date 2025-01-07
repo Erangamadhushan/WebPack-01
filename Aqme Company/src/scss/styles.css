@@ -47,9 +47,7 @@ header.sticky {
 
 #SearchOption {
   background-color: transparent;
-}
-#SearchOption:hover {
-  background-color: rgba(17, 17, 17, 0.8470588235);
+  color: #fff;
 }
 
 #overviewPanel {
@@ -68,4 +66,11 @@ header.sticky {
 
 .signUpSocialMedia:hover {
   background-color: var(--i);
+}
+
+img.socialMedia {
+  filter: saturate(0.4);
+}
+img.socialMedia:hover {
+  filter: grayscale(0);
 }/*# sourceMappingURL=styles.css.map */

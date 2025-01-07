@@ -15,8 +15,8 @@ document.querySelector('header').innerHTML = `
         <a href="faq.html" class="text-xl font-semibold hover:font-bold">FAQ</a>
     </nav>
     <div class="items-center hidden md:block justify-center px-2">
-        <input class="p-2 border focus:border-green-200 focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>
-        <button class="bg-black p-2 text-white">Search</button>
+        <input class="p-2 border focus:border-green-200 rounded-lg focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>
+        <button class="bg-black p-2 text-white" onclick="javascript:focusInputSection()">Search</button>
     </div>
     <div class="hidden md:block space-x-5">
         <button onclick="visitCartproducts()" class="bg-gray-300 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>

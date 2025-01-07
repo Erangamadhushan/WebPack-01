@@ -42,3 +42,7 @@ function addToCartProductItem(img, desc, brandName, price) {
 function visitUserprofile() {
     window.location.replace("./userProfile.html");
 }
+
+function focusInputSection() {
+    document.querySelector("#SearchOption").focus();
+}

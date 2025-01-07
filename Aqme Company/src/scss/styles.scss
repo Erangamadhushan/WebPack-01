@@ -39,9 +39,8 @@ header {
 }
 #SearchOption {
   background-color:transparent;
-  &:hover {
-    background-color:#111111d8;
-  }
+  color:#fff;
+  
 }
 
 #overviewPanel {
@@ -62,5 +61,11 @@ header {
   &:hover {
     background-color:var(--i);
     //color:#5b5b03;
+  }
+}
+img.socialMedia {
+  filter:saturate(0.4);
+  &:hover {
+    filter:grayscale(0);
   }
 }

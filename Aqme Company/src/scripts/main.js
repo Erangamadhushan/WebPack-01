@@ -24,7 +24,7 @@ document.querySelector('header').innerHTML = `
     </nav>
     <div class="items-center hidden md:block justify-center px-2 gap-2">
         <input class="p-2 border focus:border-green-200 rounded-lg text-black focus:outline-none" type="text" name="SearchOption" placeholder="Search here.." id="SearchOption"/>
-        <button class="bg-gray-900 p-2 m-1 text-white">Search</button>
+        <button class="bg-black p-2 m-1 text-white" onclick="javascript:focusInputSection()">Search</button>
     </div>
     <div class="hidden md:block space-x-5">
         <button onclick="visitCartproducts()" class="bg-gray-500 p-2"><img src="./icons/buy.png" style="width:30px;"/></button>
@@ -185,19 +185,14 @@ function loadFooter(footerContent) {
     loadFooterContent += `
         <div class="">
             <img src="${footerContainer3.img}" alt="" style="width:120px;"/>
-            <p><a href="" >${footerContainer3.link1}</a></p>
-            <p><a href="">${footerContainer3.link2}</a></p>
-            <p><a href="">${footerContainer3.link3}</a></p>
         </div>
     `;
     
     loadFooterContent += `
         <div class="">
             <h3>${footerContainer4.title}</h3>
-            <p><a href="" >${footerContainer4.link1}</a></p>
-            <p><a href="">${footerContainer4.link2}</a></p>
-            <p><a href="">${footerContainer4.link3}</a></p>
-            
+            <p class="text-blue-400 hover:underline"><a href="./cartItem.html" >${footerContainer4.link1}</a></p>
+            <p class="text-blue-400 hover:underline"><a href="./userProfile.html">${footerContainer4.link2}</a></p>
         </div>
     `;
     loadFooterContent += `
@@ -231,11 +226,11 @@ function loadFooterEnd() {
         <div class="flex justify-center flex-col">
             <p>Copyright 2022 Aqme Luxury Watch Selling Company</p>
             <div class="flex justify-center gap-2">
-                <a href=""><img src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-                <a href=""><img src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
-                <a href=""><img src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-                <a href=""><img src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
-                <a href=""><img src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img class="socialMedia" src="./icons/socialmedia/facebook.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img class="socialMedia" src="./icons/socialmedia/instagram.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>            
+                <a href=""><img class="socialMedia" src="./icons/socialmedia/twitter.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img class="socialMedia" src="./icons/socialmedia/pinterest.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
+                <a href=""><img class="socialMedia" src="./icons/socialmedia/linkedIn.png" alt="Lorem ipsum dolor sit amet consectetur" style="width:60px;height:60px;"/></a>
             </div>
         </div>
     `;
