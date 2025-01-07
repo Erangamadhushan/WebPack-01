@@ -32,7 +32,7 @@ document.querySelector('header').innerHTML = `
 // Load nav bar into the main html files
 
 document.querySelector('#panel').innerHTML = `
-    <nav class="justify-center items-center grid grid-cols-1 bg-black  px-3 custom:hidden">
+    <nav class="justify-center items-center grid grid-cols-1 text-white bg-black  px-3 custom:hidden">
         <a href="index.html" class="text-xl font-semibold hover:font-bold text-center py-3" >Home</a>
         <a href="index.html#aboutUs" class="text-xl font-semibold hover:font-bold text-center py-3">About Us</a>
         <a href="./products.html" class="text-xl font-semibold hover:font-bold text-center py-3">Products</a>
@@ -48,7 +48,7 @@ function renderAllProductOverview(items) {
     let renderAllItemContent = " ";
     items.forEach((item) => {
         renderAllItemContent += `
-            <div class="max-w-[300px] rounded-lg border border-white text-white bg-black duration-200 group hover:bg-gray-900 hover:text-white p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
+            <div class="max-w-[300px] rounded-lg border border-white text-white duration-200 group hover:bg-gray-900 hover:text-white p-4 mt-4 relative"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="200">
                 <div class=" group-hover:text-green-400">
                     <div class="max-w-[350px] mx-auto my-10">
                         <img src="${item.img}" alt="${item.desc}" style="margin:auto;width:70%;"/>

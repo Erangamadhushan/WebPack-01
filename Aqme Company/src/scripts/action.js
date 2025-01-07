@@ -11,15 +11,8 @@ function buyProductItem(img, desc, brandName, price) {
         price:price
     }
 
-    let currentItem = sessionStorage.getItem('currentItem');
-    if (currentItem == null) {
-        currentItem = [];
-    }
-    else {
-        currentItem = JSON.parse(currentItem);
-    }
     // Add the item to the current item list
-    sessionStorage.setItem('currentFocusItem', JSON.stringify(item));
+    sessionStorage.setItem('currentItem', JSON.stringify(item));
     window.location.replace("buyItem.html");
 }
 
