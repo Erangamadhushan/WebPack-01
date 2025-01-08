@@ -14,49 +14,10 @@
                 background-color:#362516;
             } */
         </style>
-        <script>
-            let cartItems = [];
-            let cardItem = JSON.stringify(cartItems);
-            localStorage.setItem('itemList',cardItem);
-        </script>
     </head>
     <body>
         <div class="container-fluid bg-main   p-0 landing ">
-            <div class="navbar navbar-expand-md bg-main  navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand text-dark logo main_heading" href="#">Natural Glow</a>
-                    <button class="navbar-toggler line_btn" type="button" data-bs-toggle="collapse" data-bs-target="#pagenavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="pagenavbar">
-                        <ul class="navbar-nav gap-2">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link text-dark">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="About.html" class="nav-link text-dark">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="products.html" class="nav-link text-dark">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link text-dark">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <!-- <a onclick="" class="nav-link btn btn-lg ">
-                                    <img src="icons/search.png" alt="search icon" width="20"/>
-                                </a> -->
-                            </li>
-                            <li class="nav-item">
-                                <a href="cartProducts.html" class="nav-link btn btn-lg">
-                                    <img src="icons/add-to-cart.png" alt="add to cart icon" width="20"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
+            <div class="navbar navbar-expand-md bg-main  navbar-dark"> </div>
 
             <div class="container py-1">
                 <div class="row welcome_items">
@@ -242,53 +203,28 @@
 
         <div class="container-fluid mt-5">
             <h1 class="main_heading py-3 text-center">Testimonals</h1>
-            <div class="row terminologies p-2 d-flex justify-content-center gap-5">
-               <!--
-                    <div class=" bg-main rounded-2 py-4">
-                        <div class="d-grid" style="display:grid;place-items:center;">
-                            <div>
-                                <p class="text-center">${item.desc}</p>
-                            </div>
-                            <div class="row row-cols-2">
-                                <div class="col-5">
-                                    <img src="${item.user}" alt="services_images" style="width:100px;aspect-ratio:1;object-fit:cover;"/>
-                                </div>
-                                <div class="col-7">
-                                    <h4 class="text-center main_heading py-2">${item.userName}</h4>
-                                    <p class="text-center main_heading">${item.rating}/10</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               -->
-            </div>
+            <div class="row terminologies p-2 d-flex justify-content-center gap-5"> </div>
         </div>
 
         <div class="container-fluid bg-main py-4 my-2">
             <div class="container pb-4">
                 <h1 class="text-center main_heading py-5">Explore Our Products</h1>
-                <div class="row ex_products d-flex flex-wrap justify-content-center align-items-center gap-2">
-                    
-                </div>
+                <div class="row ex_products d-flex flex-wrap justify-content-center align-items-center gap-2"> </div>
             </div>
         </div>
 
 
         <div class="container-fluid bg-line  py-3 p-4">
             <!--Footer content loading soon -->
-            <div class="row d-flex footer">
-
-            </div>
+            <div class="row d-flex footer"> </div>
         </div>
 
         
-
-
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="./scripts/navbar.js"></script>
         <script type="module" src="scripts/index.js"></script>
     </body>
 </html>

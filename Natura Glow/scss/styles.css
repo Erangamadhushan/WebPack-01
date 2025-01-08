@@ -26,7 +26,7 @@ img {
 }
 
 .bg-main {
-  background-color: rgba(243, 229, 212, 0.8784313725);
+  background-color: #16a34a;
 }
 
 .bg-line {
@@ -34,7 +34,7 @@ img {
 }
 
 .border-main {
-  border: 2px solid rgba(243, 229, 212, 0.8784313725);
+  border: 2px solid #16a34a;
 }
 
 .border-line {
@@ -55,7 +55,7 @@ img {
 
 .main_btn {
   background-color: #362516;
-  color: rgba(243, 229, 212, 0.8784313725);
+  color: #16a34a;
 }
 
 .landing {
@@ -101,7 +101,7 @@ img {
 
 .navbar-toggler {
   background-color: #362516;
-  color: rgba(243, 229, 212, 0.8784313725);
+  color: #16a34a;
 }
 
 .border-main {
