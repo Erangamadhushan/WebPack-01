@@ -31,3 +31,44 @@ service_desc[3].innerHTML = services_content[3];
 
 document.querySelector('.getEndNote').innerHTML = endNote;
 // ====================================================================================================================
+
+function renderNoteDescription() {
+    let welcomeNoteDesc = document.querySelector('.noteDesc');
+    let welcomeNote = `
+    <div class="row d-flex ">
+        <div class="col-md-8 py-4">
+            <h1 class="main_heading">Welcome to Natura Glow,</h1>
+            <h5 class="welcomeNoteDesc"></h5>
+        </div>
+    </div>
+
+    <div class="row d-flex">
+        <div class="col-md-8 py-4 service_content" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+            <h4 class=""><a href="#" class="service_heading" get-data="Makeup Artistry"></a></h4>
+            <p class="service_desc"></p>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col-md-8 py-4 service_content" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+            <h4 class=""><a href="#" class="service_heading" get-data="Skin Care Treatments"></a></h4>
+            <p class="service_desc"></p>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col-md-8 py-4 service_content" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+            <h4 class=""><a href="#" class="service_heading" get-data="Personalized Beauty Consultations"></a></h4>
+            <p class="service_desc"></p>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col-md-8 py-4 service_content" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+            <h4 class=""><a href="#" class="service_heading" get-data="Beauty Workshops"></a></h4>
+            <p class="service_desc"></p>
+        </div>
+    </div>
+`;
+
+welcomeNoteDesc.innerHTML = welcomeNote;
+}
+
+renderNoteDescription();

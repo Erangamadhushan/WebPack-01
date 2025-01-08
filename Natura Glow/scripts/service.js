@@ -112,3 +112,5 @@ function loadSubDetails(Details1, Details2) {
     subDetail.innerHTML += content;
 }
 
+
+
