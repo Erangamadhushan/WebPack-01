@@ -6,7 +6,7 @@ let loginContainer = document.querySelector('.userEntering');
 function renderLoginInstructions() {
     
     let loginContainerContent = `
-        <div class="grid grid-cols- p-5  w-[95vw] max-h-[70vh] h-screen  max-w-[900px] my-10  mx-auto md:grid-cols-2 page-sections" data-aos="fade-up" data-aos-duration="1000">
+        <div class="grid grid-cols- p-5  w-[95vw] min-h-[70vh]  max-w-[900px] my-10  mx-auto md:grid-cols-2 page-sections" data-aos="fade-up" data-aos-duration="1000">
             <div class="p-2">
                 <div>
                     <h1 class="text-5xl font-bold py-10 text-white">Aqme Products User !!</h1>

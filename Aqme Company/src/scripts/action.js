@@ -1,6 +1,3 @@
-function visitCartproducts() {
-
-}
 
 function buyProductItem(img, desc, brandName, price) {
     // Create a new product item
@@ -18,7 +15,13 @@ function buyProductItem(img, desc, brandName, price) {
 
 function addToCartProductItem(img, desc, brandName, price) {
     // Create a new product item
-    let item = {img, desc, brandName, price };
+    
+    let item = {
+        img:img,
+        desc:desc,
+        brandName:brandName,
+        price:price
+    };
     
     let showCartItem = localStorage.getItem('showCartItem');
     if(showCartItem == null) {
@@ -29,6 +32,8 @@ function addToCartProductItem(img, desc, brandName, price) {
     }
     showCartItem.push(item);
     localStorage.setItem('showCartItem', JSON.stringify(showCartItem));
+    
+    window.location.replace("./cartItem.html");
     // Add the item to the current item list
 }
 

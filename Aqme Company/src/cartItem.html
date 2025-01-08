@@ -34,28 +34,30 @@
             <header class="w-full flex justify-between items-center text-white "></header>
 
             <!--mobile navbar content-->
-            <div id="panel" class="hidden bg-gray-200"></div>
+            <div id="panel" class="hidden bg-black text-white"></div>
         </div>
 
-        <table class=" max-w-[1000px] mx-auto border border-gray-800 w-auto ">
+        <table class="w-[90%] my-10 mx-auto border border-gray-800 ">
             <thead class="bg-gray-800  text-white space-x-4">
                 <th class="p-5 px-10">Item Name</th>
+                <th class="p-5 px-10">Item Image</th>
                 <th class="px-10">Item Price</th>
                 <th class="px-10">Item Description</th>
                 <th class="px-10">Status</th>
             </thead>
-            <tbody>
+            <tbody class="text-white">
 
             </tbody>
         </table>
         <!-- Table template here-->
-        <template>
-            <tr>
-                <td class="productName"></td>
-                <td class="productPrice"></td>
-                <td class="productDesc"></td>
-                <td>
-                    <button type="button" class="bg-green-500 p-1 rounded-md buyNowItem" >Buy Now</button>"
+        <template >
+            <tr class="">
+                <td class="productName p-4 text-center"></td>
+                <td class="productImg w-[80px] p-4"><img /></td>
+                <td class="productPrice p-4 text-center"></td>
+                <td class="productDesc p-4 text-center"></td>
+                <td class="grid gap-3 p-4">
+                    <button type="button" class="bg-green-500 p-1 rounded-md buyNowItem" >Buy Now</button>
                     <button type="button" class="bg-red-500 p-2 rounded-md itemRemove">Remove Product</button>
                 </td>
             </tr>

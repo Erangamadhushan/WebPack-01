@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     <p class="font-bold text-2xl">Total Price :$<span id="total" item-price="${buyItem.price}"><span></p>
                 </div>
                 <div class="flex space-x-3">
-                    <button class="bg-green-700 hover:bg-green-600 text-white p-2 mt-4 rounded-lg" onclick="addToCartProductItem('${buyItem}')">Add to Cart</button>
+                    <button class="bg-green-700 hover:bg-green-600 text-white p-2 mt-4 rounded-lg" onclick="addToCartProductItem('${buyItem.img}','${buyItem.desc}','${buyItem.brandName}','${buyItem.price}')">Add to Cart</button>
                     <button class="bg-red-700 hover:bg-red-600 text-white p-2 mt-4 rounded-lg" onclick="">Buy Now</button>
                 </div>
             </div>
@@ -27,31 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     getTotal();
 });
 
-function addToCartProductItem() {
-    const productStorage = JSON.parse(localStorage.getItem('products'));
-    productStorage.unshift(buyItem);
-    // localStorage.setItem('products', JSON.stringify(productStorage));
-    // console.log("Product added to cart !");
-    // window.location.replace("index.html");
-    displayCart(productStorage);
-}
 
-function displayCart(productStorage) {
-    let tbody = document.querySelector('tbody');
-    productStorage.forEach((product, index) => {
-        let template = document.querySelector('template');
-        let tr = template.content.cloneNode(true);
-        tr.querySelector('.productName').textContent = product.brandName;
-        tr.querySelector('.productPrice').textContent = product.price;
-        tr.querySelector('.productDesc').textContent = product.desc;
-        tr.querySelector('.itemRemove').addEventListener('click', () => {
-            window.alert("Hello World !");
-            
-        });
-        tbody.appendChild(tr);
-    })
-    
-}
 
 function getTotal() {
     let quantity = parseInt(document.getElementById("quantity").value);
