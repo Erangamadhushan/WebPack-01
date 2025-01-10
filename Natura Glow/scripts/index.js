@@ -20,13 +20,14 @@ function renderitems(products) {
     products_container.innerHTML = " ";
     products.forEach((item,index) => {
         products_content += `
-            <div class="col-lg-3 col-md-3 cold-sm-6 border border-3 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
+            <div class="col-lg-3 col-md-3 cold-sm-6 border border-3 rounded-4 py-4 exProducts" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
                 <div class="d-grid" style="display:grid;place-items:center;">
                     <img src="${item.img}" alt="services_images" style="width:90%;aspect-ratio:3/2;object-fit:cover;"/>
                     <h4 class="text-center main_heading py-2">${item.title}</h4>
                     <p class="text-center main_heading">${item.desc}</p>
                     <p class="text-center main_description">$${item.price}
                 </div>
+                <div class="mask"></div>
             </div>
         `
     });
@@ -155,7 +156,7 @@ subscription.innerHTML = " ";
 function rendersubSectionContent() {
     const subSection = document.querySelector(".subSection");
     subSection.innerHTML = `
-        <div class="col-lg-3 col-md-4 col-sm-6 p-2 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 p-2 main_item py-3 border border-dark rounded-4"  data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:360px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -163,7 +164,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3 border border-dark rounded-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:360px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -171,7 +172,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3 border border-dark rounded-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:360px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -179,14 +180,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
-            <h2 class="text-center">
-                Lorem ipsum dolor sit.
-            </h2>
-            <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
-            </p>
-        </div>
+        
     `
 }
 

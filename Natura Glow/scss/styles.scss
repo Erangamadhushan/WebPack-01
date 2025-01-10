@@ -10,6 +10,10 @@
     // clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 
 }
+.welcome_items {
+    background-image:url('../images/default/makeUp.jpg');
+    background-size:cover;
+}
 
 .welcome_note {
     font-size:3.5em;
@@ -21,7 +25,31 @@
     padding:5px 20px;
     font-size:1.2em;
     border-radius:10px;
-    margin-bottom:2px;
+    margin-block:20px;
+}
+
+.worthwhileCollection {
+    overflow:hidden;
+}
+.worthwhileCollection:hover img{
+    scale:1.1;
+}
+.exProducts {
+    overflow:hidden;
+}
+.exProducts .mask {
+    width:150%;
+    height:200%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#2196fe;
+    transform:translate(25%,-50%)skew(45deg);
+    z-index:-1;
+    transition: transform 1s;
+}
+.exProducts:hover .mask {
+    transform:translate(-50%,0)skew(45deg);
 }
 
 .line_btn {
@@ -41,6 +69,14 @@
 }
 .border-rl {
     border-radius:0px 50px 0;
+}
+.navbar {
+    background-color:#2222226e;
+    -webkit-backdrop-filter:blur(2px);
+    position:sticky;
+    top:0;
+    left:0;
+    backdrop-filter:blur(2px);
 }
 .navbar-toggler {
     background-color:$secondary-color;
