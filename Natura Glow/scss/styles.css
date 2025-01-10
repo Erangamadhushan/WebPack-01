@@ -146,6 +146,11 @@ img {
   text-decoration: underline;
 }
 
+.productExplorerContent:hover {
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 767px) {
   .welcome_items {
     display: flex;

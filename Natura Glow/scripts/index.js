@@ -20,9 +20,9 @@ function renderitems(products) {
     products_container.innerHTML = " ";
     products.forEach((item,index) => {
         products_content += `
-            <div class="col-lg-2 col-md-3 cold-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+            <div class="col-lg-3 col-md-3 cold-sm-6 border border-3 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
                 <div class="d-grid" style="display:grid;place-items:center;">
-                    <img src="${item.img}" alt="services_images" style="width:80%;aspect-ratio:3/2;object-fit:cover;"/>
+                    <img src="${item.img}" alt="services_images" style="width:90%;aspect-ratio:3/2;object-fit:cover;"/>
                     <h4 class="text-center main_heading py-2">${item.title}</h4>
                     <p class="text-center main_heading">${item.desc}</p>
                     <p class="text-center main_description">$${item.price}
@@ -124,7 +124,7 @@ function explorerItem(explorer) {
     let ex_content = " ";
     explorer.forEach((item) => {
         ex_content += `
-            <div class="col-lg-3 col-md-3 col-sm-6 mb-2 item_direct p-0">
+            <div class="col-lg-3 col-md-3 col-sm-5 mb-2 item_direct p-0" style="max-width:380px;">
                 <div class="card">
                     <img src="${item.img}" alt="${item.desc}" class="card-img-top"/>
                     <div class="card-body">
@@ -155,7 +155,7 @@ subscription.innerHTML = " ";
 function rendersubSectionContent() {
     const subSection = document.querySelector(".subSection");
     subSection.innerHTML = `
-        <div class="col-lg-3 col-md-4 col-sm-6 p-2 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-3 col-md-4 col-sm-6 p-2 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -163,7 +163,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -171,7 +171,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -179,7 +179,7 @@ function rendersubSectionContent() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut et, odio, voluptas laudantium nulla reprehenderit consectetur voluptatum quam possimus, adipisci porro. 
             </p>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-3 col-md-4 col-sm-6 main_item py-3" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <h2 class="text-center">
                 Lorem ipsum dolor sit.
             </h2>
@@ -195,28 +195,28 @@ function rendersubSectionContent() {
 function renderProductExplorerContent() {
     const productExplorerContainer = document.querySelector('.productExplorer');
     productExplorerContainer.innerHTML = `
-        <div class="col-lg-2 col-md-3 col-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-2 col-md-3 col-sm-5 rounded-4 py-4 productExplorerContent" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <div class="d-grid" style="display:grid;place-items:center;">
                 <img src="icons/collection.png" alt="services_images" width="70"/>
                 <h4 class="text-center main_heading py-2">Heading 1</h4>
                 <p class="text-center main_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa reiciendis consequuntur similique distinctio?.</p>
             </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-2 col-md-3 col-sm-6 rounded-4 py-4 productExplorerContent" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <div class="d-grid" style="display:grid;place-items:center;">
                 <img src="icons/advice.png" alt="services_images" width="70"/>
                 <h4 class="text-center main_heading py-2">Heading 2</h4>
                 <p class="text-center main_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa reiciendis consequuntur similique distinctio?</p>
             </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-2 col-md-3 col-sm-6 rounded-4 py-4 productExplorerContent" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <div class="d-grid" style="display:grid;place-items:center;">
                 <img src="icons/free-shipping.png" alt="services_images" width="70"/>
                 <h4 class="text-center main_heading py-2">Heading 3</h4>
                 <p class="text-center main_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa reiciendis consequuntur similique distinctio?.</p>    
             </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 bg-main rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-2 col-md-3 col-sm-6 border-solid-2 rounded-4 py-4 productExplorerContent" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" style="max-width:380px;">
             <div class="d-grid" style="display:grid;place-items:center;">
                 <img src="icons/store.png" alt="services_images" width="70"/>
                 <h4 class="text-center main_heading py-2">Heading 4</h4>
