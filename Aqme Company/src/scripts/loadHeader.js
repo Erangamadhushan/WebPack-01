@@ -2,7 +2,7 @@
 
 document.querySelector('header').innerHTML = `
     <h2 class="text-2xl font-bold px-3 py-5">Aqme Company</h2>
-    <nav class="justify-center items-center space-x-4  hidden custom:block">
+    <nav class="justify-center items-center space-x-4  hidden custom:block  sticky top-0">
         <a href="index.html" class="text-xl font-semibold hover:font-bold px-4">Home</a>
         <a href="index.html#aboutUs" class="text-xl text-semibold hover:font-bold">About Us</a>
         <a href="products.html" class="text-xl font-semibold hover:font-bold">Products</a>
