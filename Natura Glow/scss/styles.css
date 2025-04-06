@@ -67,7 +67,7 @@ img {
 }
 
 .welcome_items {
-  background-image: url("../images/default/makeUp.jpg");
+  background-image: url("../images/default/makeUp.png");
   background-size: cover;
 }
 
@@ -86,10 +86,12 @@ img {
 
 .worthwhileCollection {
   overflow: hidden;
+  transition: all 0.5s;
 }
 
 .worthwhileCollection:hover img {
-  scale: 1.1;
+  scale: 1.05;
+  transition: all 0.5s;
 }
 
 .exProducts {

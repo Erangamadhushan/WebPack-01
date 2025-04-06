@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded',() => {
     explorerItem(explorer);
     rendersubSectionContent();
     renderProductExplorerContent();
+    renderNewsLatterContent();
 });
 
 function renderitems(products) {
@@ -217,8 +218,28 @@ function renderProductExplorerContent() {
                 <p class="text-center main_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa reiciendis consequuntur similique distinctio?.</p>
             </div>
         </div>
-    `
+    `;
 }
 
-
+function renderNewsLatterContent() {
+    const newsLatterContainer = document.querySelector('.newlaterContent');
+    newsLatterContainer.innerHTML = `
+        <div class="col-lg-2 col-md-3 col-sm-5 rounded-4 py-4"  style="width:100%;max-width:1200px;margin:auto;">
+            <div class="d-grid" style="display:grid;">
+                <h4 class="main_heading py-2">Subscribe to our newsletter</h4>
+                <p class="main_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa reiciendis consequuntur similique distinctio?</p>
+            </div>
+            <div class="d-grid" style="display:grid;">
+                <div>
+                    <form action="" onsubmit="newslatterSubscription" mathod="post" autocomplete="off" class="d-flex justify-content-center align-items-center">
+                        <input type="email" class="w-full p-3 m-3" style="width:70%;" placeholder="Enter your email" aria-label="Recipient's username" />
+                        <div>
+                            <button class="btn btn-danger p-3 px-5" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    `;
+    }
 
