@@ -69,6 +69,7 @@ img {
 .welcome_items {
   background-image: url("../images/default/makeUp.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .welcome_note {
