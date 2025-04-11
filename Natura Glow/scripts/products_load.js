@@ -77,105 +77,6 @@ loadcategory2Items.innerHTML = " ";
 loadcategory3Items.innerHTML = " ";
 loadcategory4Items.innerHTML = " ";
 loadcategory5Items.innerHTML = " ";
-function loadItems(items){
-    let content = " ";
-    items.forEach((item) => {
-        switch(item.category) {
-            case "category1":
-                content += `
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card" >
-                            <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
-                                <h1>${item.title}</h1>
-                                <p>${item.category}</p>
-                                <p>${item.desc}</p>
-                                <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                loadcategory1Items.innerHTML = content;
-                categoryType1Heading.innerHTML = item.category;
-            break;
-            case "category2":
-                content += `
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card">
-                            <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
-                                <h1>${item.title}</h1>
-                                <p>${item.category}</p>
-                                <p>${item.desc}</p>
-                                <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                `
-                loadcategory2Items.innerHTML = content;
-                categoryType2Heading.innerHTML = item.category;
-            break;
-            case "category3":
-                content += `
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card">
-                            <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
-                                <h1>${item.title}</h1>
-                                <p>${item.category}</p>
-                                <p>${item.desc}</p>
-                                <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                loadcategory3Items.innerHTML = content;
-                categoryType3Heading.innerHTML = item.category;
-            break;
-            case "category4":
-                content += `
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card">
-                            <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
-                                <h1>${item.title}</h1>
-                                <p>${item.category}</p>
-                                <p>${item.desc}</p>
-                                <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                loadcategory4Items.innerHTML = content;
-                categoryType4Heading.innerHTML = item.category;
-            break;
-            case "category5":
-                content += `
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 rounded-4 py-4" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
-                        <div class="card">
-                            <img src="${item.img}" class="card-img-top"/>
-                            <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
-                                <h1>${item.title}</h1>
-                                <p>${item.category}</p>
-                                <p>${item.desc}</p>
-                                <span class="main_description">$${item.price} </span>
-                                <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                loadcategory5Items.innerHTML = content;
-                categoryType5Heading.innerHTML = item.category;
-            break;
-        }
-    });
-
-    
-}
 
 function loadFooter(){
     let footer = document.querySelector('.footer');
@@ -232,5 +133,123 @@ function loadFooter(){
     //console.log(footerContent);
     footer.innerHTML = footerContent;
 }
+ 
+
+// function loadItems(items){
+//     let content = " ";
+//     items.forEach((item) => {
+//         switch(item.category) {
+//             case "category1":
+//                 // content += `
+//                 //     <div class="categoryProduct">
+//                 //         <div class="card" >
+//                 //             <img src="${item.img}" class="card-img-top"/>
+//                 //             <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
+//                 //                 <h1>${item.title}</h1>
+//                 //                 <p>${item.category}</p>
+//                 //                 <p>${item.desc}</p>
+//                 //                 <span class="main_description">$${item.price} </span>
+//                 //                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                 //             </div>
+//                 //         </div>
+//                 //     </div>
+//                 // `;
+//                 content += `
+//                     <div class="categoryProduct">
+//                         <div class="">
+//                             <img src="${item.img}" alt=""/>
+//                         </div>
+//                         <div>
+//                             <h3 class="text-center">${item.title}</h3>
+//                             <p>${item.category}</p>
+//                             <p>${item.desc}</p>
+//                             <div class="d-flex flex-col">
+//                                 <span class="main_description">$${item.price} </span>
+//                                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 `
+//                 loadcategory1Items.innerHTML = content;
+//                 categoryType1Heading.innerHTML = item.category;
+//             break;
+//             case "category2":
+//                 content += `
+//                     <div class="categoryProduct" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+//                         <div class="card">
+//                             <img src="${item.img}" class="card-img-top"/>
+//                             <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
+//                                 <h1>${item.title}</h1>
+//                                 <p>${item.category}</p>
+//                                 <p>${item.desc}</p>
+//                                 <span class="main_description">$${item.price} </span>
+//                                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 `
+//                 loadcategory2Items.innerHTML = content;
+//                 categoryType2Heading.innerHTML = item.category;
+//             break;
+//             case "category3":
+//                 content += `
+//                     <div class="categoryProduct" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+//                         <div class="card">
+//                             <img src="${item.img}" class="card-img-top"/>
+//                             <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
+//                                 <h1>${item.title}</h1>
+//                                 <p>${item.category}</p>
+//                                 <p>${item.desc}</p>
+//                                 <span class="main_description">$${item.price} </span>
+//                                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 `;
+//                 loadcategory3Items.innerHTML = content;
+//                 categoryType3Heading.innerHTML = item.category;
+//             break;
+//             case "category4":
+//                 content += `
+//                     <div class="categoryProduct" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+//                         <div class="card">
+//                             <img src="${item.img}" class="card-img-top"/>
+//                             <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
+//                                 <h1>${item.title}</h1>
+//                                 <p>${item.category}</p>
+//                                 <p>${item.desc}</p>
+//                                 <span class="main_description">$${item.price} </span>
+//                                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 `;
+//                 loadcategory4Items.innerHTML = content;
+//                 categoryType4Heading.innerHTML = item.category;
+//             break;
+//             case "category5":
+//                 content += `
+//                     <div class="categoryProduct" data-aos="fade-up" data-aos-duration="400" data-aos-easing="linear" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
+//                         <div class="card">
+//                             <img src="${item.img}" class="card-img-top"/>
+//                             <div class="card-body get_item_content" get-title="${item.title}" get-price="${item.price}" get-desc="${item.desc}" get-img="${item.img}">
+//                                 <h1>${item.title}</h1>
+//                                 <p>${item.category}</p>
+//                                 <p>${item.desc}</p>
+//                                 <span class="main_description">$${item.price} </span>
+//                                 <button type="button" onclick="addtoCart('${item.title}');" class="main_btn">Buy Now</button>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 `;
+//                 loadcategory5Items.innerHTML = content;
+//                 categoryType5Heading.innerHTML = item.category;
+//             break;
+//         }
+//     });
+
+    
+// }
+
 
 
