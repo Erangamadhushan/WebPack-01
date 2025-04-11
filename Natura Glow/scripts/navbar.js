@@ -12,7 +12,7 @@ function renderNavbar() {
             <div class="collapse navbar-collapse " id="pagenavbar">
                 <ul class="navbar-nav gap-2">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link text-white text-lg">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="About.html" class="nav-link text-white">About</a>
@@ -29,7 +29,7 @@ function renderNavbar() {
                         </a> -->
                     </li>
                     <li class="nav-item">
-                        <a href="cartProducts.html" class="nav-link btn btn-lg">
+                        <a href="cartProducts.html" class="nav-link btn btn-lg" style="background-color:white background-clip:text;">
                             <img src="icons/add-to-cart.png" alt="add to cart icon" width="20"/>
                         </a>
                     </li>
@@ -37,5 +37,5 @@ function renderNavbar() {
             </div>
             
         </div>
-    `
+    `;
 }
