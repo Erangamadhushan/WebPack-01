@@ -5,8 +5,16 @@
 ?>
 <?php
     if(isset($_POST['login'])) {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+
+            return $data;
+        }
+        $email = test_input($_POST['email']);
+        $password = test_input($_POST['password']);
 
         // Check if the email and password are not empty
         if (!empty($email) && !empty($password)) {
@@ -22,7 +30,8 @@
                 $user = $result->fetch_assoc();
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_name'] = $user['name'];
-                header("Location:");
+                header("Location:../../client/index.html");
+                // Redirect to the desired page after successful login
                 exit();
             } else {
                 echo "<script>alert('Invalid email or password');</script>";

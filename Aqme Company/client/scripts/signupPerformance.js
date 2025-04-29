@@ -53,21 +53,21 @@ function renderSignUpContent() {
             <div class="p-2">
                 <div>
                     <h2 class="text-2xl font-semibold text-white text-center">SIGN UP</h2>
-                    <form class="flex flex-col space-y-4">
+                    <form class="flex flex-col space-y-4" action="../server/SignUp/signupUsers.php" method="post">
                         <div class="flex flex-col space-y-2">
                             <label for="userName" class="text-white">User Name :</label>
                             <input type="text" name="userName" id="userName" class="w-full p-2 bg-transparent border border-white text-white" placeholder="User Name" required/>
                         </div>
                         <div class="flex flex-col space-y-2">
                             <label for="email" class="text-white">Email Address : </label>
-                            <input type="password" name=userPassword" id="userPassword" class="w-full p-2 bg-transparent border border-white text-white" placeholder="Password" required/>
+                            <input type="email" name="email" id="email" class="w-full p-2 bg-transparent border border-white text-white" placeholder="Email Address" required/>
                         </div>
                         <div class="flex flex-col space-y-2">
                             <label for="userPassword" class="text-white">Password : </label>
-                            <input type="password" name=userPassword" id="userPassword" class="w-full p-2 bg-transparent border border-white text-white" placeholder="Password" required/>
+                            <input type="password" name="userPassword" id="userPassword" class="w-full p-2 bg-transparent border border-white text-white" placeholder="Password" required/>
                         </div>
                         <div class="flex flex-col py-5 space-y-2">
-                            <input type="submit" class="p-3 bg-transparent border duration-1000 font-bold border-white text-white hover:bg-white hover:text-black" value="Sign Up"/>
+                            <input type="submit" name="signUp" class="p-3 bg-transparent border duration-1000 font-bold border-white text-white hover:bg-white hover:text-black" value="Sign Up"/>
                         </div>
 
                         <div class="flex flex-col py-5 space-y-2">
