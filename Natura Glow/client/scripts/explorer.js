@@ -39,6 +39,3 @@ export const explorer = [
     }
 ];
 
-export const subscriptionDetails = [
-    {}
-]
