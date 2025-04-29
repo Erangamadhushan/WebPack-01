@@ -3,7 +3,7 @@
 
     include_once '../config.php';
 
-    if(isset($_POST['signUp'])) {
+    if($_SERVER['REQUEST_METHOD'] == "POST") {
         function test_input($data) {
             $data = trim($data);
             $data = stripslashes($data);
@@ -11,9 +11,9 @@
             return $data;
         }
 
-        $username = test_input($_POST['username']);
+        $username = test_input($_POST['userName']);
         $email = test_input($_POST['email']);
-        $password = test_input($_POST['password']);
+        $password = test_input($_POST['userPassword']);
 
         //Check if the name, email and password are not empty
 
@@ -26,19 +26,18 @@
 
             if($stmt->execute()) {
                 echo "<script>console.error('User registered successfully');</script>";
-                header("Location: Login/userLogin.php");
-                exit();
-            }
-            else {
-                echo "<script>console.error('Error: ". $stmt->error > "');<script>";
                 header("Location: ../../client/index.html");
                 exit();
+            }
+            // Check for errors
+            else {
+                echo "<script>console.error('Error: ". $stmt->error > "');<script>";
+                
             }
         }
         else {
             echo "<script>console.error('Please fill in all fields');<script>";
-            header("Location: ../../client/index.html");
-            exit();
+           
         }
 
     }

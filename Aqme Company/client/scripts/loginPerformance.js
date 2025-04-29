@@ -16,7 +16,7 @@ function renderLoginInstructions() {
             <div class="p-2">
                 <div>
                     <h2 class="text-2xl font-semibold text-white text-center">LOGIN</h2>
-                    <form class="flex flex-col space-y-4">
+                    <form class="flex flex-col space-y-4" action="../server/Login/userLogin.php" method="post" >
                         <div class="flex flex-col space-y-2">
                             <label for="userName" class="text-white">User Name :</label>
                             <input type="text" name="userName" id="userName" class="w-full p-2 bg-transparent border border-white text-white" placeholder="User Name" required/>
